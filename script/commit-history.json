@@ -19,17 +19,36 @@
     "conclusion": "neutral"
   },
   {
-    "sha": "HEAD",
+    "sha": "2515bf51dd56de0b92a88c5c445ce48422691752",
     "author": "oscar-perezRevons",
     "commit": {
       "date": "2025-10-14T13:36:55.000Z",
       "message": "refactor: Reestructurar y renombrar los directorios del proyecto_2",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/2515bf51dd56de0b92a88c5c445ce48422691752"
     },
     "stats": {
       "total": 13,
       "additions": 2,
       "deletions": 11,
+      "date": "2025-10-14"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "oscar-perezRevons",
+    "commit": {
+      "date": "2025-10-14T13:40:31.000Z",
+      "message": "refactor: Reestructurar y renombrar los directorios del proyecto_3",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
       "date": "2025-10-14"
     },
     "coverage": 0,
