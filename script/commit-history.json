@@ -1,0 +1,21 @@
+[
+  {
+    "sha": "HEAD",
+    "author": "oscar-perezRevons",
+    "commit": {
+      "date": "2025-10-14T13:34:01.000Z",
+      "message": "refactor: Reestructurar y renombrar los directorios del proyecto",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 14023,
+      "additions": 4204,
+      "deletions": 9819,
+      "date": "2025-10-14"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
+  }
+]
