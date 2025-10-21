@@ -1,15 +1,20 @@
 import sumar from "./sumador";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
+const nombre = document.querySelector("#nombre-mascota");
+const raza = document.querySelector("#raza-mascota");
+const edad = document.querySelector("#edad-mascota");
+const especie = document.querySelector("#especie-mascota");
+const foto = document.querySelector("#foto-mascota");
+const form = document.querySelector("#publicar-form");
 const div = document.querySelector("#resultado-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
+  const name = nombre.value;
+  const breed = raza.value;
+  const age = Number.parseInt(edad.value);
+  const species = especie.value;
+  const photo = foto.value;
 
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
-});
+  div.innerHTML = `<p>${name}, ${breed}, ${age} meses, ${species}, ${photo}</p>`;});
