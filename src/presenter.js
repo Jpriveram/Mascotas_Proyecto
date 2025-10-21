@@ -1,4 +1,5 @@
 import sumar from "./sumador";
+import publicarMascota from "./publicar-mascota.js";
 
 const nombre = document.querySelector("#nombre-mascota");
 const raza = document.querySelector("#raza-mascota");
@@ -17,4 +18,5 @@ form.addEventListener("submit", (event) => {
   const species = especie.value;
   const photo = foto.value;
 
-  div.innerHTML = `<p>${name}, ${breed}, ${age} meses, ${species}, ${photo}</p>`;});
+  div.innerHTML = "<p>" + publicarMascota(name, breed, age, species, photo) + "</p>";
+});

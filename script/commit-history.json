@@ -19,12 +19,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3386694e52ecc399dbaf0a15325884331db4507e",
     "author": "Ostin",
     "commit": {
       "date": "2025-10-21T14:05:46.000Z",
       "message": "fetch: implementar funcion de agregar mascota",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/3386694e52ecc399dbaf0a15325884331db4507e"
     },
     "stats": {
       "total": 38,
@@ -36,5 +36,24 @@
     "test_count": 2,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Ostin",
+    "commit": {
+      "date": "2025-10-21T14:35:18.000Z",
+      "message": "fetch: se integro la funcion de publicar mascota al presenter",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 9,
+      "deletions": 7,
+      "date": "2025-10-21"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
