@@ -1,0 +1,44 @@
+{
+  "mascotas": [
+    {
+      "id": 1,
+      "nombre": "Luna",
+      "raza": "Labrador Retriever",
+      "edad": 24,
+      "especie": "Perro",
+      "foto": "https://example.com/fotos/luna.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Michi",
+      "raza": "Siames",
+      "edad": 12,
+      "especie": "Gato",
+      "foto": "https://example.com/fotos/michi.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Rocky",
+      "raza": "Pitbull",
+      "edad": 36,
+      "especie": "Perro",
+      "foto": "https://example.com/fotos/rocky.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Nube",
+      "raza": "Angora",
+      "edad": 8,
+      "especie": "Gato",
+      "foto": "https://example.com/fotos/nube.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Coco",
+      "raza": "Cacatúa",
+      "edad": 18,
+      "especie": "Ave",
+      "foto": "https://example.com/fotos/coco.jpg"
+    }
+  ]
+}

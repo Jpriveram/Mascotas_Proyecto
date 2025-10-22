@@ -57,17 +57,36 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "952cb5607e4a06dd43067ecb62441686d63e5de0",
     "author": "Ostin",
     "commit": {
       "date": "2025-10-22T05:32:58.000Z",
       "message": "fix: Solucione el test de publicar-mascota",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/952cb5607e4a06dd43067ecb62441686d63e5de0"
     },
     "stats": {
       "total": 9,
       "additions": 2,
       "deletions": 7,
+      "date": "2025-10-22"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-10-22T19:11:24.000Z",
+      "message": "feat:se añadio mascotas.json",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 44,
+      "additions": 44,
+      "deletions": 0,
       "date": "2025-10-22"
     },
     "coverage": 100,
