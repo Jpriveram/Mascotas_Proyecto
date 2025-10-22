@@ -38,12 +38,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a944f41852632994d7f6fc0c7314b5afd3279da5",
     "author": "Ostin",
     "commit": {
       "date": "2025-10-21T14:35:18.000Z",
       "message": "fetch: se integro la funcion de publicar mascota al presenter",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/a944f41852632994d7f6fc0c7314b5afd3279da5"
     },
     "stats": {
       "total": 16,
@@ -55,5 +55,24 @@
     "test_count": 2,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Ostin",
+    "commit": {
+      "date": "2025-10-22T05:32:58.000Z",
+      "message": "fix: Solucione el test de publicar-mascota",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 2,
+      "deletions": 7,
+      "date": "2025-10-22"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
