@@ -95,17 +95,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9ff33781460de2a55155361cc9d944d28f81b045",
     "author": "Juan Pablo",
     "commit": {
       "date": "2025-10-22T20:52:58.000Z",
       "message": "feat: Ahora se puede visualizar la lista de mascotas que tenemos en el json",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/9ff33781460de2a55155361cc9d944d28f81b045"
     },
     "stats": {
       "total": 62,
       "additions": 61,
       "deletions": 1,
+      "date": "2025-10-22"
+    },
+    "coverage": 100,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Juan Pablo",
+    "commit": {
+      "date": "2025-10-22T20:58:44.000Z",
+      "message": "feat: Se agregaron estilos a la pagina para que se vea mas organizada",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 111,
+      "additions": 111,
+      "deletions": 0,
       "date": "2025-10-22"
     },
     "coverage": 100,
