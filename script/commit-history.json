@@ -76,12 +76,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a41b7aee35e8ef1c9038fa2891a4bea224dc4cbc",
     "author": "Leonardo Koller",
     "commit": {
       "date": "2025-10-22T19:11:24.000Z",
       "message": "feat:se añadio mascotas.json",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/a41b7aee35e8ef1c9038fa2891a4bea224dc4cbc"
     },
     "stats": {
       "total": 44,
@@ -91,6 +91,25 @@
     },
     "coverage": 100,
     "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Juan Pablo",
+    "commit": {
+      "date": "2025-10-22T20:52:58.000Z",
+      "message": "feat: Ahora se puede visualizar la lista de mascotas que tenemos en el json",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 62,
+      "additions": 61,
+      "deletions": 1,
+      "date": "2025-10-22"
+    },
+    "coverage": 100,
+    "test_count": 3,
     "failed_tests": 0,
     "conclusion": "success"
   }
