@@ -114,12 +114,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e6e9ff0524c59c70c95075f0ca1ce1367c8767fe",
     "author": "Juan Pablo",
     "commit": {
       "date": "2025-10-22T20:58:44.000Z",
       "message": "feat: Se agregaron estilos a la pagina para que se vea mas organizada",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/e6e9ff0524c59c70c95075f0ca1ce1367c8767fe"
     },
     "stats": {
       "total": 111,
@@ -129,6 +129,25 @@
     },
     "coverage": 100,
     "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-10-23T03:52:07.000Z",
+      "message": "feat(filter-age): filtro por rango desde JSON + tests (Jest/Cypress)",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 4425,
+      "additions": 2155,
+      "deletions": 2270,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
   }

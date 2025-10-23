@@ -1,6 +1,7 @@
 import mostrarMascota from "./mostrar-mascota.js";
 import data from './mascotas.json';
 import publicarMascota from "./publicar-mascota.js";
+import filtrarMascotasPorEdad from "./filtrar-mascota-edad.js";
 
 const nombre = document.querySelector("#nombre-mascota");
 const raza = document.querySelector("#raza-mascota");
@@ -10,6 +11,12 @@ const foto = document.querySelector("#foto-mascota");
 const form = document.querySelector("#publicar-form");
 const div = document.querySelector("#resultado-div");
 const listaDiv = document.querySelector("#lista-mascotas");
+
+
+const edadDesde = document.querySelector("#edad-desde");
+const edadHasta = document.querySelector("#edad-hasta");
+const buscarBtn = document.querySelector("#buscar-rango-button");
+const divFiltrarEdad = document.querySelector("#resultado-buscar-edad-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -21,6 +28,15 @@ form.addEventListener("submit", (event) => {
   const photo = foto.value;
 
   div.innerHTML = "<p>" + publicarMascota(name, breed, age, species, photo) + "</p>";
+
+});
+
+buscarBtn.addEventListener("click", () => {
+  const desde = Number.parseInt(edadDesde.value);
+  const hasta = Number.parseInt(edadHasta.value);
+
+  const html = filtrarMascotasPorEdad(desde, hasta);
+  divFiltrarEdad.innerHTML = html;
 });
 
 document.addEventListener("DOMContentLoaded", () => {
