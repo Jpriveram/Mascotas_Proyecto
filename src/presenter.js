@@ -1,5 +1,5 @@
 import mostrarMascota from "./mostrar-mascota.js";
-import data from './mascotas.json';
+import data from './mascotas.json' assert { type: 'json' };
 import publicarMascota from "./publicar-mascota.js";
 
 const nombre = document.querySelector("#nombre-mascota");
