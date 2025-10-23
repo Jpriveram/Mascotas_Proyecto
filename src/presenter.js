@@ -1,5 +1,4 @@
 import mostrarMascota from "./mostrar-mascota.js";
-import data from './mascotas.json' assert { type: 'json' };
 import publicarMascota from "./publicar-mascota.js";
 
 const nombre = document.querySelector("#nombre-mascota");
@@ -23,14 +22,19 @@ form.addEventListener("submit", (event) => {
   div.innerHTML = "<p>" + publicarMascota(name, breed, age, species, photo) + "</p>";
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  
-  const mascotas = data.mascotas;
-  let htmlTotal = "";
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const response = await fetch("./mascotas.json");
+    const data = await response.json();
 
-  mascotas.forEach(mascota => {
-    htmlTotal += mostrarMascota(mascota);
-  });
+    const mascotas = data.mascotas;
+    let htmlTotal = "";
 
-  listaDiv.innerHTML = htmlTotal;
+    mascotas.forEach((mascota) => {
+      htmlTotal += mostrarMascota(mascota);
+    });
+
+    listaDiv.innerHTML = htmlTotal;
+  } catch (error) {
+    console.error("Error loading mascotas.json:", error);  }
 });
