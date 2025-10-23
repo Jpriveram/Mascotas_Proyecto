@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7e3fbb19916d746e3aec34b0924ed8036126b6dc",
     "author": "oscar-perezRevons",
     "commit": {
       "date": "2025-10-23T04:54:12.000Z",
       "message": "fix: Se agrego los archivos al .gitignore",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/7e3fbb19916d746e3aec34b0924ed8036126b6dc"
     },
     "stats": {
       "total": 65,
@@ -207,5 +207,24 @@
     "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "oscar-perezRevons",
+    "commit": {
+      "date": "2025-10-23T05:26:41.000Z",
+      "message": "fix: Se resolvio los problemas de integracion con el Cypress",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 13682,
+      "additions": 4129,
+      "deletions": 9553,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 5,
+    "failed_tests": 2,
+    "conclusion": "failure"
   }
 ]
