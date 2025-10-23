@@ -133,12 +133,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "99e08e1a138d7e7c67163d774ae3346feaa8a64f",
     "author": "Alejandro Alvarez",
     "commit": {
       "date": "2025-10-23T03:52:07.000Z",
       "message": "feat(filter-age): filtro por rango desde JSON + tests (Jest/Cypress)",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/99e08e1a138d7e7c67163d774ae3346feaa8a64f"
     },
     "stats": {
       "total": 4425,
@@ -148,6 +148,25 @@
     },
     "coverage": 100,
     "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-10-23T05:34:17.000Z",
+      "message": "feat(filter-breed): implementar filtrado de mascotas por raza (Jest + Cypress + UI)",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 186,
+      "additions": 186,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
   }
