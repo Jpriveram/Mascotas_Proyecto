@@ -228,17 +228,36 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "753fc4516e3b73709ea7bb3556e622546395881f",
     "author": "oscar-perezRevons",
     "commit": {
       "date": "2025-10-23T05:31:23.000Z",
       "message": "fix: Se corrigio el archivo de jest",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/753fc4516e3b73709ea7bb3556e622546395881f"
     },
     "stats": {
       "total": 8,
       "additions": 4,
       "deletions": 4,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "oscar-perezRevons",
+    "commit": {
+      "date": "2025-10-23T07:00:47.000Z",
+      "message": "feat: Se implemento la base de datos en Supabase",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 600,
+      "additions": 492,
+      "deletions": 108,
       "date": "2025-10-23"
     },
     "coverage": 100,
