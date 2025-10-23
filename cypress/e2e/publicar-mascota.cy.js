@@ -22,6 +22,8 @@ describe("Mascotas", () => {
     cy.get('#foto-mascota').type("foto.png");
     cy.get("#publicar-button").click();
     cy.get("#resultado-div").should("contain", 
-      "Firulais, Salchicha, 6 meses, Perro, foto.png");
+      "Firulais, Salchicha, 6, Perro, foto.png");
   });
 });
+
+
