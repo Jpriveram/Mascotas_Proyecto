@@ -108,3 +108,54 @@ body {
     border-radius: 5px;
     margin-bottom: 15px;
   }
+
+  /* Formualrio filtrar mascota por edad */
+#filtrar-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 20px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+#filtrar-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+#filtrar-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#buscar-rango-button {
+  grid-column: 1 / -1;
+  border-radius: 5px;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+#buscar-rango-button:hover {
+  background-color: #555;
+}
+
+#resultado-buscar-edad-div {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 500;
+  color: #333;
+}
