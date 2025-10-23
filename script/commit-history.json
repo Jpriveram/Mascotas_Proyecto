@@ -133,17 +133,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d03c5af906e7c69cbeed44a0829971078c386c5d",
     "author": "Ostin",
     "commit": {
       "date": "2025-10-23T02:28:06.000Z",
       "message": "fix: arreglo en publicar-mascota",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/d03c5af906e7c69cbeed44a0829971078c386c5d"
     },
     "stats": {
       "total": 6,
       "additions": 4,
       "deletions": 2,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Ostin",
+    "commit": {
+      "date": "2025-10-23T03:10:15.000Z",
+      "message": "feat: Se agrego la funcionalidad de publicar mascota de manera temporal",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 40,
+      "additions": 29,
+      "deletions": 11,
       "date": "2025-10-23"
     },
     "coverage": 100,

@@ -11,6 +11,16 @@ const form = document.querySelector("#publicar-form");
 const div = document.querySelector("#resultado-div");
 const listaDiv = document.querySelector("#lista-mascotas");
 
+let mascotas = [...data.mascotas];
+
+function renderMascotas() {
+  let htmlTotal = "";
+  mascotas.forEach(mascota => {
+    htmlTotal += mostrarMascota(mascota);
+  });
+  listaDiv.innerHTML = htmlTotal;
+}
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -21,16 +31,19 @@ form.addEventListener("submit", (event) => {
   const photo = foto.value;
 
   div.innerHTML = "<p>" + publicarMascota(name, breed, age, species, photo) + "</p>";
+
+  const nuevaMascota = {
+    id: mascotas.length + 1,
+    nombre: name,
+    raza: breed,
+    edad: age,
+    especie: species,
+    foto: photo
+  };
+
+  mascotas.push(nuevaMascota);
+  renderMascotas();
+  form.reset();
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  
-  const mascotas = data.mascotas;
-  let htmlTotal = "";
-
-  mascotas.forEach(mascota => {
-    htmlTotal += mostrarMascota(mascota);
-  });
-
-  listaDiv.innerHTML = htmlTotal;
-});
+document.addEventListener("DOMContentLoaded", renderMascotas);
