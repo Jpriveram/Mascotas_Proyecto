@@ -152,17 +152,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9cf7e088ec35ccae2056b179075e999f286676a5",
     "author": "Juan Pablo Rivera Mercado",
     "commit": {
       "date": "2025-10-23T03:18:42.000Z",
       "message": "fix: se volvio a arreglar el presenter para poder visualizar la pagina correctamente en netlify",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/9cf7e088ec35ccae2056b179075e999f286676a5"
     },
     "stats": {
       "total": 22,
       "additions": 13,
       "deletions": 9,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Juan Pablo Rivera Mercado",
+    "commit": {
+      "date": "2025-10-23T03:27:29.000Z",
+      "message": "fix: Otro fix para el netlify",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
       "date": "2025-10-23"
     },
     "coverage": 100,
