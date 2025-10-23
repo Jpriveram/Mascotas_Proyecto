@@ -3,8 +3,8 @@ it("debería mostrar la lista de mascotas al cargar la página", () => {
     const petList = cy.get("#lista-mascotas");
     petList.should("exist");
     petList.find(".mascota-item").first()
-      .should("contain", "Luna")
-      .and("contain", "Labrador Retriever")
-      .and("contain", "24") 
+      .should("contain", "Togo")
+      .and("contain", "Pitbull")
+      .and("contain", "3")
       .and("contain", "Perro");
   });
