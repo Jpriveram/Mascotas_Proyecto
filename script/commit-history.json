@@ -133,21 +133,116 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
-    "author": "Alejandro Alvarez",
+    "sha": "7f8ca05fe2e2e49f939a259f466be2c16475d8ab",
+    "author": "Juan Pablo Rivera Mercado",
     "commit": {
-      "date": "2025-10-23T03:52:07.000Z",
-      "message": "feat(filter-age): filtro por rango desde JSON + tests (Jest/Cypress)",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "date": "2025-10-23T02:51:41.000Z",
+      "message": "fix: se arreglo un error por el cual la lsita de masctoas no se mostraba en netlify",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/7f8ca05fe2e2e49f939a259f466be2c16475d8ab"
     },
     "stats": {
-      "total": 4425,
-      "additions": 2155,
-      "deletions": 2270,
+      "total": 23,
+      "additions": 12,
+      "deletions": 11,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "9cf7e088ec35ccae2056b179075e999f286676a5",
+    "author": "Juan Pablo Rivera Mercado",
+    "commit": {
+      "date": "2025-10-23T03:18:42.000Z",
+      "message": "fix: se volvio a arreglar el presenter para poder visualizar la pagina correctamente en netlify",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/9cf7e088ec35ccae2056b179075e999f286676a5"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 13,
+      "deletions": 9,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "99e08e1a138d7e7c67163d774ae3346feaa8a64f",
+    "author": "Juan Pablo Rivera Mercado",
+    "commit": {
+      "date": "2025-10-23T03:27:29.000Z",
+      "message": "fix: Otro fix para el netlify",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/99e08e1a138d7e7c67163d774ae3346feaa8a64f"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "7e3fbb19916d746e3aec34b0924ed8036126b6dc",
+    "author": "oscar-perezRevons",
+    "commit": {
+      "date": "2025-10-23T04:54:12.000Z",
+      "message": "fix: Se agrego los archivos al .gitignore",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/7e3fbb19916d746e3aec34b0924ed8036126b6dc"
+    },
+    "stats": {
+      "total": 65,
+      "additions": 65,
+      "deletions": 0,
       "date": "2025-10-23"
     },
     "coverage": 100,
     "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c6f209c643e65bb22850519d7f00e1d648dfcd49",
+    "author": "oscar-perezRevons",
+    "commit": {
+      "date": "2025-10-23T05:26:41.000Z",
+      "message": "fix: Se resolvio los problemas de integracion con el Cypress",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/c6f209c643e65bb22850519d7f00e1d648dfcd49"
+    },
+    "stats": {
+      "total": 13682,
+      "additions": 4129,
+      "deletions": 9553,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 5,
+    "failed_tests": 2,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "oscar-perezRevons",
+    "commit": {
+      "date": "2025-10-23T05:31:23.000Z",
+      "message": "fix: Se corrigio el archivo de jest",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 4,
+      "deletions": 4,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 5,
     "failed_tests": 0,
     "conclusion": "success"
   }
