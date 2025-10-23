@@ -209,12 +209,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c6f209c643e65bb22850519d7f00e1d648dfcd49",
     "author": "oscar-perezRevons",
     "commit": {
       "date": "2025-10-23T05:26:41.000Z",
       "message": "fix: Se resolvio los problemas de integracion con el Cypress",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/c6f209c643e65bb22850519d7f00e1d648dfcd49"
     },
     "stats": {
       "total": 13682,
@@ -226,5 +226,24 @@
     "test_count": 5,
     "failed_tests": 2,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "oscar-perezRevons",
+    "commit": {
+      "date": "2025-10-23T05:31:23.000Z",
+      "message": "fix: Se corrigio el archivo de jest",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 4,
+      "deletions": 4,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

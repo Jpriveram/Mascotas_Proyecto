@@ -19,7 +19,7 @@ it('debería devolver el HTML correcto para las mascotas dentro del rango de eda
       `<h3>${m.nombre}</h3>` +
       `<p>Especie: ${m.especie}</p>` +
       `<p>Raza: ${m.raza}</p>` +
-      `<p>Edad: ${m.edad} meses</p>` +
+      `<p>Edad: ${m.edad}</p>` +
       `<img src="${m.foto}" alt="Foto de ${m.nombre}">` +
       '</div>';
   });
