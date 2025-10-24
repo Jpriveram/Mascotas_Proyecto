@@ -247,12 +247,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a9b50c815d6e2b24d4a1ee0e35f95dd27697475c",
     "author": "oscar-perezRevons",
     "commit": {
       "date": "2025-10-23T07:00:47.000Z",
       "message": "feat: Se implemento la base de datos en Supabase",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/a9b50c815d6e2b24d4a1ee0e35f95dd27697475c"
     },
     "stats": {
       "total": 600,
@@ -262,6 +262,25 @@
     },
     "coverage": 100,
     "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-10-24T08:49:09.000Z",
+      "message": "feat(filter-breed): implementar filtrado de mascotas por raza (Jest + Cypress + UI)",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 582,
+      "additions": 383,
+      "deletions": 199,
+      "date": "2025-10-24"
+    },
+    "coverage": 100,
+    "test_count": 8,
     "failed_tests": 0,
     "conclusion": "success"
   }

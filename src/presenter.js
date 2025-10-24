@@ -1,6 +1,7 @@
 import mostrarMascota from "./mostrar-mascota.js";
 import publicarMascota from "./publicar-mascota.js";
 import filtrarMascotasPorEdad from "./filtrar-mascota-edad.js";
+import filtrarMascotasPorRaza from "./filtrar-mascota-raza.js";
 import { supabase } from "./supabaseClient.js";
 
 const nombre = document.querySelector("#nombre-mascota");
@@ -16,6 +17,10 @@ const edadDesde = document.querySelector("#edad-desde");
 const edadHasta = document.querySelector("#edad-hasta");
 const buscarBtn = document.querySelector("#buscar-rango-button");
 const divFiltrarEdad = document.querySelector("#resultado-buscar-edad-div");
+
+const CampoRaza = document.querySelector("#raza-filtro");
+const buscarRazaBtn = document.querySelector("#buscar-raza-button");
+const divFiltrarRaza = document.querySelector("#resultado-buscar-raza-div");
 
 // Cargar todas las mascotas al cargar la página
 document.addEventListener("DOMContentLoaded", async () => {
@@ -110,3 +115,9 @@ buscarBtn.addEventListener("click", async () => {
         console.error("Error filtrando mascotas:", error);
     }
 });
+
+buscarRazaBtn.addEventListener("click", () => {
+  const razaBuscada = CampoRaza.value;
+  const html = filtrarMascotasPorRaza(razaBuscada);
+  divFiltrarRaza.innerHTML = html;
+}); 
