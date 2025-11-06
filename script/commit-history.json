@@ -266,18 +266,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2abedee2985fc8eb15cc60584cd72fa860ad0564",
     "author": "Alejandro Alvarez",
     "commit": {
       "date": "2025-10-24T08:49:09.000Z",
       "message": "feat(filter-breed): implementar filtrado de mascotas por raza (Jest + Cypress + UI)",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/2abedee2985fc8eb15cc60584cd72fa860ad0564"
     },
     "stats": {
       "total": 582,
       "additions": 383,
       "deletions": 199,
       "date": "2025-10-24"
+    },
+    "coverage": 100,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-11-06T00:38:04.000Z",
+      "message": "refactoring: mejoro nombres de variables en metodo filtrarMascotasPorEdad y en prueba jest del mismo",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 2,
+      "deletions": 2,
+      "date": "2025-11-06"
     },
     "coverage": 100,
     "test_count": 8,

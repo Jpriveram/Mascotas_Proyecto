@@ -5,5 +5,5 @@ export default function filtrarMascotasPorEdad(desde, hasta, mascotas) {
     ) {
         return [];
     }
-    return mascotas.filter((m) => m.edad >= desde && m.edad <= hasta);
+    return mascotas.filter((mascota) => mascota.edad >= desde && mascota.edad <= hasta);
 }

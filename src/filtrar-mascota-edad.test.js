@@ -9,7 +9,7 @@ describe('filtrarMascotasPorEdad', () => {
         const resultado = filtrarMascotasPorEdad(desde, hasta, data.mascotas);
 
         const esperado = data.mascotas.filter(
-            (m) => m.edad >= desde && m.edad <= hasta
+            (mascota) => mascota.edad >= desde && mascota.edad <= hasta
         );
 
         expect(resultado).toEqual(esperado);
