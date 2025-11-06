@@ -304,17 +304,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "bfd1e9c0578baee892aa0eba3c4ed664ec3cb04e",
     "author": "Alejandro Alvarez",
     "commit": {
       "date": "2025-11-06T03:31:36.000Z",
       "message": "refactoring: mejoro nombres de variables en metodo filtrarMascotasPorRaza y en prueba jest del mismo",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/bfd1e9c0578baee892aa0eba3c4ed664ec3cb04e"
     },
     "stats": {
       "total": 20,
       "additions": 10,
       "deletions": 10,
+      "date": "2025-11-06"
+    },
+    "coverage": 100,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "oscarperez-Revons",
+    "commit": {
+      "date": "2025-11-06T13:14:04.000Z",
+      "message": "refactor: Mejora de nombres",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 47540,
+      "additions": 32257,
+      "deletions": 15283,
       "date": "2025-11-06"
     },
     "coverage": 100,

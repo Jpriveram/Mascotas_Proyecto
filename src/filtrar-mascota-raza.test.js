@@ -3,16 +3,16 @@ import data from './mascotas.json';
 
 describe('filtrarMascotasPorRaza', () => {
   it('debería devolver el HTML correcto para las mascotas que coincidan con la raza', () => {
-    const raza = 'Angora'; // Raza a buscar
+    const raza = 'Angora'; 
 
     const resultado = filtrarMascotasPorRaza(raza);
 
-    const filtradas = data.mascotas.filter(
-      (mascota) => mascota.raza.toLowerCase() === raza.toLowerCase() // Comparación sin case sensitive
+    const mascotasFiltradas = data.mascotas.filter(
+      (mascota) => mascota.raza.toLowerCase() === raza.toLowerCase()
     );
 
     let htmlEsperado = '';
-    filtradas.forEach((mascota) => {
+    mascotasFiltradas.forEach((mascota) => {
       htmlEsperado +=
         '<div class="mascota-item">' +
         `<h3>${mascota.nombre}</h3>` +
