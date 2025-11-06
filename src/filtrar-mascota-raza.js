@@ -8,7 +8,7 @@ function filtrarMascotasPorRaza(raza) {
 
   const razaLower = raza.toLowerCase();
   const filtradas = data.mascotas.filter(
-    (m) => m.raza.toLowerCase() === razaLower
+    (mascota) => mascota.raza.toLowerCase() === razaLower
   );
 
   if (filtradas.length === 0) {
@@ -16,8 +16,8 @@ function filtrarMascotasPorRaza(raza) {
   }
 
   let html = "";
-  filtradas.forEach((m) => {
-    html += mostrarMascota(m);
+  filtradas.forEach((mascota) => {
+    html += mostrarMascota(mascota);
   });
 
   return html;

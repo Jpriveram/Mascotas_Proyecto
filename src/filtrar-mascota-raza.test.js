@@ -8,18 +8,18 @@ describe('filtrarMascotasPorRaza', () => {
     const resultado = filtrarMascotasPorRaza(raza);
 
     const filtradas = data.mascotas.filter(
-      (m) => m.raza.toLowerCase() === raza.toLowerCase() // Comparación sin case sensitive
+      (mascota) => mascota.raza.toLowerCase() === raza.toLowerCase() // Comparación sin case sensitive
     );
 
     let htmlEsperado = '';
-    filtradas.forEach((m) => {
+    filtradas.forEach((mascota) => {
       htmlEsperado +=
         '<div class="mascota-item">' +
-        `<h3>${m.nombre}</h3>` +
-        `<p>Especie: ${m.especie}</p>` +
-        `<p>Raza: ${m.raza}</p>` +
-        `<p>Edad: ${m.edad}</p>` +
-        `<img src="${m.foto}" alt="Foto de ${m.nombre}">` +
+        `<h3>${mascota.nombre}</h3>` +
+        `<p>Especie: ${mascota.especie}</p>` +
+        `<p>Raza: ${mascota.raza}</p>` +
+        `<p>Edad: ${mascota.edad}</p>` +
+        `<img src="${mascota.foto}" alt="Foto de ${mascota.nombre}">` +
         '</div>';
     });
 
