@@ -4,35 +4,28 @@ import data from './mascotas.json';
 describe('filtrarMascotasPorRaza', () => {
   it('debería devolver el HTML correcto para las mascotas que coincidan con la raza', () => {
     const raza = 'Angora'; 
-
     const resultado = filtrarMascotasPorRaza(raza);
-
     const mascotasFiltradas = data.mascotas.filter(
       (mascota) => mascota.raza.toLowerCase() === raza.toLowerCase()
     );
 
-    let htmlEsperado = '';
     mascotasFiltradas.forEach((mascota) => {
-      htmlEsperado +=
-        '<div class="mascota-item">' +
-        `<h3>${mascota.nombre}</h3>` +
-        `<p>Especie: ${mascota.especie}</p>` +
-        `<p>Raza: ${mascota.raza}</p>` +
-        `<p>Edad: ${mascota.edad}</p>` +
-        `<img src="${mascota.foto}" alt="Foto de ${mascota.nombre}">` +
-        '</div>';
+      expect(resultado).toContain(`<h3>${mascota.nombre}</h3>`);
+      expect(resultado).toContain(`<p>Especie: ${mascota.especie}</p>`);
+      expect(resultado).toContain(`<p>Raza: ${mascota.raza}</p>`);
+      expect(resultado).toContain(`<p>Edad: ${mascota.edad}</p>`);
+      expect(resultado).toContain(`src="${mascota.foto}"`);
+      expect(resultado).toContain(`data-id="${mascota.id}"`);
     });
-
-    expect(resultado).toEqual(htmlEsperado);
   });
 
   it('debería devolver un mensaje si no se ingresa una raza', () => {
     const resultado = filtrarMascotasPorRaza('');
-    expect(resultado).toEqual('<p>Por favor, ingrese una raza para buscar.</p>');
+    expect(resultado).toContain('Por favor, ingrese una raza');
   });
 
   it('debería devolver un mensaje si no existen mascotas con la raza buscada', () => {
     const resultado = filtrarMascotasPorRaza('Schnauzer');
-    expect(resultado).toEqual('<p>No existen mascotas con esa raza.</p>');
+    expect(resultado).toContain('No existen mascotas');
   });
 });

@@ -342,12 +342,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5afd7cfe057988c36ba739c03b6789b1cead4ff9",
     "author": "pololi15",
     "commit": {
       "date": "2025-11-11T17:22:41.000Z",
       "message": "fix: se corrigio la version de parcel",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/5afd7cfe057988c36ba739c03b6789b1cead4ff9"
     },
     "stats": {
       "total": 46386,
@@ -359,5 +359,24 @@
     "test_count": 8,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pololi15",
+    "commit": {
+      "date": "2025-11-11T21:43:26.000Z",
+      "message": "refactor: ajuste de test para que funcionen con las nuevas modificaciones",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 204,
+      "additions": 155,
+      "deletions": 49,
+      "date": "2025-11-11"
+    },
+    "coverage": 46.67,
+    "test_count": 10,
+    "failed_tests": 2,
+    "conclusion": "failure"
   }
 ]

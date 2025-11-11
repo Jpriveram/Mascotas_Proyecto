@@ -1,23 +1,26 @@
-import mostrarMascota from './mostrar-mascota';
+import mostrarMascota from './mostrar-mascota.js';
 
 describe('mostrarMascota', () => {
-  it('debería tomar un objeto mascota y devolver un string HTML formateado', () => {
+  it('debería devolver un HTML válido con los datos de la mascota', () => {
 
     const mascota = {
-      "nombre": "Luna",
-      "raza": "Labrador Retriever",
-      "edad": 24,
-      "especie": "Perro",
-      "foto": "https://example.com/fotos/luna.jpg"
+      id: 1,
+      nombre: "Luna",
+      raza: "Labrador Retriever",
+      edad: 24,
+      especie: "Perro",
+      foto: "https://example.com/fotos/luna.jpg"
     };
-    const resultadoEsperado = '<div class="mascota-item">' +
-                                '<h3>Luna</h3>' +
-                                '<p>Especie: Perro</p>' +
-                                '<p>Raza: Labrador Retriever</p>' +
-                                '<p>Edad: 24</p>' +
-                                '<img src="https://example.com/fotos/luna.jpg" alt="Foto de Luna">' +
-                              '</div>';
 
-    expect(mostrarMascota(mascota)).toEqual(resultadoEsperado);
+    const resultado = mostrarMascota(mascota);
+
+    expect(resultado).toContain('<div class="mascota-item">');
+    expect(resultado).toContain('<h3>Luna</h3>');
+    expect(resultado).toContain('<p>Especie: Perro</p>');
+    expect(resultado).toContain('<p>Raza: Labrador Retriever</p>');
+    expect(resultado).toContain('<p>Edad: 24</p>');
+    expect(resultado).toContain('src="https://example.com/fotos/luna.jpg"');
+    expect(resultado).toContain('class="ver-detalle-btn"');
+    expect(resultado).toContain('Ver detalles');
   });
 });

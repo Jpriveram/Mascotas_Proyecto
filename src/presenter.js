@@ -2,6 +2,7 @@ import mostrarMascota from "./mostrar-mascota.js";
 import publicarMascota from "./publicar-mascota.js";
 import filtrarMascotasPorEdad from "./filtrar-mascota-edad.js";
 import filtrarMascotasPorRaza from "./filtrar-mascota-raza.js";
+import verDetalleMascota from "./ver-detalle-mascota.js";
 import { supabase } from "./supabaseClient.js";
 
 const nombre = document.querySelector("#nombre-mascota");
@@ -10,7 +11,7 @@ const edad = document.querySelector("#edad-mascota");
 const especie = document.querySelector("#especie-mascota");
 const foto = document.querySelector("#foto-mascota");
 const form = document.querySelector("#publicar-form");
-const div = document.querySelector("#resultado-div");
+const div = document.querySelector("#resultado-div"); // no borrar esta linea
 const listaDiv = document.querySelector("#lista-mascotas");
 
 const edadDesde = document.querySelector("#edad-desde");
@@ -41,10 +42,18 @@ async function cargarMascotas() {
         });
 
         listaDiv.innerHTML = htmlTotal;
-    } catch (error) {
-        listaDiv.innerHTML = `<p>Error cargando mascotas: ${error.message}</p>`;
-        console.error("Error cargando mascotas:", error);
-    }
+        const botones = document.querySelectorAll(".ver-detalle-btn");
+        
+        botones.forEach((btn) => {
+        btn.addEventListener("click", async () => {
+            const id = btn.dataset.id;
+            await verDetalleMascota(id);
+      });
+    });
+} catch (error) {
+    listaDiv.innerHTML = `<p>Error cargando mascotas: ${error.message}</p>`;
+    console.error("Error cargando mascotas:", error);
+  }
 }
 
 // Guardar mascota en Supabase al hacer submit en el formulario
@@ -77,7 +86,7 @@ form.addEventListener("submit", async (event) => {
 
 // Filtrar mascotas por edad usando los datos de Supabase
 buscarBtn.addEventListener("click", async () => {
-    const desde = Number.parseInt(edadDesde.value);
+    const desde = Number.parseInt(edadDesde.value);  
     const hasta = Number.parseInt(edadHasta.value);
 
     // Validar si los valores existen y son números válidos
@@ -120,4 +129,4 @@ buscarRazaBtn.addEventListener("click", () => {
   const razaBuscada = CampoRaza.value;
   const html = filtrarMascotasPorRaza(razaBuscada);
   divFiltrarRaza.innerHTML = html;
-}); 
+});
