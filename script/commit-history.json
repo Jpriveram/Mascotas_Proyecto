@@ -323,18 +323,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "83d5709894fbb6442c53dad84bf71ca7d406d8a1",
     "author": "oscarperez-Revons",
     "commit": {
       "date": "2025-11-06T13:14:04.000Z",
       "message": "refactor: Mejora de nombres",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/83d5709894fbb6442c53dad84bf71ca7d406d8a1"
     },
     "stats": {
       "total": 47540,
       "additions": 32257,
       "deletions": 15283,
       "date": "2025-11-06"
+    },
+    "coverage": 100,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pololi15",
+    "commit": {
+      "date": "2025-11-11T17:22:41.000Z",
+      "message": "fix: se corrigio la version de parcel",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 46386,
+      "additions": 14716,
+      "deletions": 31670,
+      "date": "2025-11-11"
     },
     "coverage": 100,
     "test_count": 8,
