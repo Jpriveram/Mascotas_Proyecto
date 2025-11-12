@@ -361,12 +361,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c5ae6b7473776c040420c54321080764098095fe",
     "author": "pololi15",
     "commit": {
       "date": "2025-11-11T21:43:26.000Z",
       "message": "refactor: ajuste de test para que funcionen con las nuevas modificaciones",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/c5ae6b7473776c040420c54321080764098095fe"
     },
     "stats": {
       "total": 204,
@@ -378,5 +378,24 @@
     "test_count": 10,
     "failed_tests": 2,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pololi15",
+    "commit": {
+      "date": "2025-11-12T04:58:20.000Z",
+      "message": "feat: ver-detalle-mascota",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 2338,
+      "additions": 2318,
+      "deletions": 20,
+      "date": "2025-11-12"
+    },
+    "coverage": 61.9,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
