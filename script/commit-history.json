@@ -380,18 +380,37 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "9789d7882d46bcc53075cba98c57bdb0c5576ee8",
     "author": "pololi15",
     "commit": {
       "date": "2025-11-12T04:58:20.000Z",
       "message": "feat: ver-detalle-mascota",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/9789d7882d46bcc53075cba98c57bdb0c5576ee8"
     },
     "stats": {
       "total": 2338,
       "additions": 2318,
       "deletions": 20,
       "date": "2025-11-12"
+    },
+    "coverage": 61.9,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Juan Pablo",
+    "commit": {
+      "date": "2025-11-18T14:13:10.000Z",
+      "message": "refac: Extract method obtenerMascotas",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 12,
+      "deletions": 4,
+      "date": "2025-11-18"
     },
     "coverage": 61.9,
     "test_count": 10,
