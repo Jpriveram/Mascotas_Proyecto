@@ -418,12 +418,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ed38a95d807f4d92236c7e4f51778a31732344e3",
     "author": "Juan Pablo",
     "commit": {
       "date": "2025-11-18T14:22:41.000Z",
       "message": "refac: Extraer a repositorio",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/ed38a95d807f4d92236c7e4f51778a31732344e3"
     },
     "stats": {
       "total": 31,
@@ -433,6 +433,25 @@
     },
     "coverage": 61.9,
     "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Juan Pablo",
+    "commit": {
+      "date": "2025-11-18T17:43:27.000Z",
+      "message": "fix:solucion de conflictos",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
+      "date": "2025-11-18"
+    },
+    "coverage": 40.74,
+    "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"
   }
