@@ -56,6 +56,20 @@ async function cargarMascotas() {
   }
 }
 
+async function insertarSupa(nombre, raza, edad, especie, foto) {
+   // Insertar en Supabase
+    const { data, error } = await supabase
+        .from('mascotas')
+        .insert([
+            { nombre: nombre, raza: raza, edad: edad, especie: especie, foto: foto }
+        ]);
+
+    if (error) {
+        div.innerHTML = `<p>Error publicando mascota: ${error.message}</p>`;
+        return;
+    }
+}
+
 // Guardar mascota en Supabase al hacer submit en el formulario
 form.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -67,7 +81,8 @@ form.addEventListener("submit", async (event) => {
     const photo = foto.value;
 
     // Insertar en Supabase
-    const { data, error } = await supabase
+    insertarSupa(name, breed, age, species, photo);
+/*    const { data, error } = await supabase
         .from('mascotas')
         .insert([
             { nombre: name, raza: breed, edad: age, especie: species, foto: photo }
@@ -77,7 +92,7 @@ form.addEventListener("submit", async (event) => {
         div.innerHTML = `<p>Error publicando mascota: ${error.message}</p>`;
         return;
     }
-
+*/
     div.innerHTML = "<p>" + publicarMascota(name, breed, age, species, photo) + "</p>";
 
     // Recargar la lista de mascotas
