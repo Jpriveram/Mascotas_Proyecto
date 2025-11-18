@@ -4,6 +4,9 @@ import filtrarMascotasPorEdad from "./filtrar-mascota-edad.js";
 import filtrarMascotasPorRaza from "./filtrar-mascota-raza.js";
 import verDetalleMascota from "./ver-detalle-mascota.js";
 import { supabase } from "./supabaseClient.js";
+import MascotasRepository from "./MascotasRepository.js";
+
+const mascotasRepository = new MascotasRepository();
 
 const nombre = document.querySelector("#nombre-mascota");
 const raza = document.querySelector("#raza-mascota");
@@ -28,21 +31,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     await cargarMascotas();
 });
 
-async function obtenerMascotas() {
-    const { data: mascotas, error } = await supabase
-        .from('mascotas')
-        .select('*');
 
-    if (error) {
-        throw error;
-    }
-    
-    return mascotas;
-}
 // Función para cargar y mostrar todas las mascotas desde Supabase
 async function cargarMascotas() {
     try {
-        const mascotas = await obtenerMascotas();
+        const mascotas = await mascotasRepository.obtenerMascotas();
 
         let htmlTotal = "";
         mascotas.forEach(mascota => {
