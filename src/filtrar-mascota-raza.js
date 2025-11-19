@@ -1,5 +1,5 @@
 import mostrarMascota from "./mostrar-mascota.js";
-import data from "./mascotas.json";
+import data from "../mascotas.json";
 
 function filtrarMascotasPorRaza(razaMascota) {
   if (!razaMascota) {
