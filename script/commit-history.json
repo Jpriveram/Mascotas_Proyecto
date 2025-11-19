@@ -437,12 +437,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7223fb23b6d7e056f47fdd5374047af4b9284abd",
     "author": "Juan Pablo",
     "commit": {
       "date": "2025-11-18T17:43:27.000Z",
       "message": "fix:solucion de conflictos",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/7223fb23b6d7e056f47fdd5374047af4b9284abd"
     },
     "stats": {
       "total": 0,
@@ -452,6 +452,25 @@
     },
     "coverage": 40.74,
     "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Juan Pablo Rivera Mercado",
+    "commit": {
+      "date": "2025-11-19T18:29:53.000Z",
+      "message": "refac: Inyeccion del MascotasService al presenter",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 59,
+      "additions": 23,
+      "deletions": 36,
+      "date": "2025-11-19"
+    },
+    "coverage": 61.9,
+    "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"
   }

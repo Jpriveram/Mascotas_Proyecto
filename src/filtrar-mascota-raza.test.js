@@ -1,5 +1,5 @@
 import filtrarMascotasPorRaza from './filtrar-mascota-raza.js';
-import data from './mascotas.json';
+import data from '../mascotas.json';
 
 describe('filtrarMascotasPorRaza', () => {
   it('debería devolver el HTML correcto para las mascotas que coincidan con la raza', () => {
