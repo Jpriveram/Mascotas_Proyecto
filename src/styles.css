@@ -1,212 +1,170 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #222831; 
+    color: #DDDDDD; 
     margin: 0;
-    padding: 20px;
-  }
-  
-  
-  h1, h2 {
+    padding: 0; 
+}
+
+h1, h2 {
     text-align: center;
     font-weight: 300;
-    color: #222;
-  }
-  
-  
-  body {
+    color: #EEEEEE; 
+    margin-bottom: 25px;
+}
+
+.main-container { 
     max-width: 900px;
     margin: 20px auto;
-    background-color: #ffffff;
+    background-color: #393E46; 
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  }
-  
-  
-  #publicar-form {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 15px 20px; 
-    margin-bottom: 40px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #eee;
-  }
-  
-  #publicar-form label {
+    margin-bottom: 20px;
+}
+
+.form-grid label {
     display: block;
     font-weight: 600;
     margin-bottom: 5px;
     font-size: 0.9em;
-    color: #555;
-  }
-  
-  #publicar-form input[type="text"],
-  #publicar-form input[type="number"] {
+    color: #B0B0B0; 
+}
+
+.form-grid input[type="text"],
+.form-grid input[type="number"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    background-color: #444950; 
+    color: #EEEEEE; 
+    border: 1px solid #555;
     border-radius: 5px;
-    box-sizing: border-box; 
-  }
-  
-  
-  #publicar-button {
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.form-grid input[type="text"]:focus,
+.form-grid input[type="number"]:focus {
+    border-color: #2A9D8F; 
+    outline: none;
+}
+
+.grid-spacer {
+    display: block;
+    height: 1px; 
+}
+
+.main-button {
     grid-column: 1 / -1; 
     border-radius: 5px;
     padding: 12px;
-    background-color: #333;
-    color: white;
+    background-color: #2A9D8F; 
+    color: #222831; 
     border: none;
     cursor: pointer;
     font-size: 1.1em;
     font-weight: 600;
     transition: background-color 0.2s;
-  }
-  
-  #publicar-button:hover {
-    background-color: #555;
-  }
-  
-  
-  #lista-mascotas {
+    margin-top: 10px;
+}
+
+.main-button:hover {
+    background-color: #2BC4A5; 
+}
+
+#lista-mascotas {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 25px; 
-  }
-  
-  .mascota-item {
-    border: 1px solid #ddd;
+    margin-bottom: 40px; 
+}
+
+.mascota-item { 
+    background-color: #444950; 
+    border: 1px solid #555;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.2s, transform 0.2s;
-  }
-  
-  .mascota-item:hover {
+}
+
+.mascota-item:hover {
     transform: translateY(-5px); 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .mascota-item h3 {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.mascota-item h3 {
     margin-top: 0;
     margin-bottom: 10px;
-    color: #111;
-  }
-  
-  .mascota-item p {
+    color: #EEEEEE; 
+}
+
+.mascota-item p {
     margin: 5px 0;
     font-size: 0.95em;
-    color: #444;
-  }
-  
-  .mascota-item img {
+    color: #CCCCCC;
+}
+
+.mascota-item img {
     width: 100%;
     height: 200px; 
     object-fit: cover; 
     border-radius: 5px;
     margin-bottom: 15px;
-  }
-
-  /* Formualrio filtrar mascota por edad */
-#filtrar-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px 20px;
-  margin-bottom: 40px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #eee;
 }
 
-#filtrar-form label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 5px;
-  font-size: 0.9em;
-  color: #555;
+.filtros-section {
+    padding-top: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-top: 1px solid #555; 
 }
 
-#filtrar-form input[type="number"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
+.filtros-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; 
 }
 
-#buscar-rango-button {
-  grid-column: 1 / -1;
-  border-radius: 5px;
-  padding: 12px;
-  background-color: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 1.1em;
-  font-weight: 600;
-  transition: background-color 0.2s;
+.filtro-item {
+    background-color: #393E46; 
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #555;
 }
 
-#buscar-rango-button:hover {
-  background-color: #555;
+.filtro-item h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #EEEEEE;
+    font-weight: 400;
+    font-size: 1.2em;
 }
 
-#resultado-buscar-edad-div {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 1em;
-  font-weight: 500;
-  color: #333;
+.publicar-section {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid #2A9D8F; 
+    padding-bottom: 40px;
+    background-color: #343A40; 
+    border-radius: 8px;
 }
 
-/* Formulario filtrar mascota por raza */
-#filtrar-raza-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px 20px;
-  margin-bottom: 40px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #eee;
-}
-
-#filtrar-raza-form label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 5px;
-  font-size: 0.9em;
-  color: #555;
-}
-
-#filtrar-raza-form input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-#buscar-raza-button {
-  grid-column: 1 / -1;
-  border-radius: 5px;
-  padding: 12px;
-  background-color: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 1.1em;
-  font-weight: 600;
-  transition: background-color 0.2s;
-}
-
-#buscar-raza-button:hover {
-  background-color: #555;
-}
-
+#resultado-div,
+#resultado-buscar-edad-div,
 #resultado-buscar-raza-div {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 1em;
-  font-weight: 500;
-  color: #333;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 5px;
+    color: #2A9D8F;
 }
