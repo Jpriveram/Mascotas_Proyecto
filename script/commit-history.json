@@ -475,18 +475,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "82b5ed96388e9d60a6b2446e51f522e61efb5890",
     "author": "Juan Pablo Rivera Mercado",
     "commit": {
       "date": "2025-11-19T19:20:42.000Z",
       "message": "Se cambiaron los estilos y estructura de la pagina",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/82b5ed96388e9d60a6b2446e51f522e61efb5890"
     },
     "stats": {
       "total": 391,
       "additions": 187,
       "deletions": 204,
       "date": "2025-11-19"
+    },
+    "coverage": 61.9,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pololi15",
+    "commit": {
+      "date": "2025-11-20T04:06:24.000Z",
+      "message": "refactor: abstracción en la inserción de publicar-mascota",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 14,
+      "deletions": 10,
+      "date": "2025-11-20"
     },
     "coverage": 61.9,
     "test_count": 10,
