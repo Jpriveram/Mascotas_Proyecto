@@ -551,12 +551,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a8e43da223fd8fffadb74bcd5c34e1c1cfe44e40",
     "author": "pololi15",
     "commit": {
       "date": "2025-11-20T04:39:07.000Z",
       "message": "fix: arreglo simple para cypress",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/a8e43da223fd8fffadb74bcd5c34e1c1cfe44e40"
     },
     "stats": {
       "total": 2,
@@ -568,5 +568,24 @@
     "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-11-20T12:08:03.000Z",
+      "message": "feat: agregar obtenerMascotaPorId en repositorio y service",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 18,
+      "deletions": 0,
+      "date": "2025-11-20"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
   }
 ]

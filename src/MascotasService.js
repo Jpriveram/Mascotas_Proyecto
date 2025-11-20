@@ -7,4 +7,9 @@ export default class MascotasService {
         const mascotas = await this.mascotasRepository.obtenerMascotas();
         return mascotas;
     }
+    
+     async obtenerMascotaPorId(id) {
+        const mascota = await this.mascotasRepository.obtenerMascotaPorId(id);
+        return mascota;
+    }
 }
