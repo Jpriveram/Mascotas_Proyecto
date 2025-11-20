@@ -2,7 +2,8 @@ import publicarMascota from './publicar-mascota';
 
 describe('publicarMascota ', () => {
   it('debería publicar una mascota', () => {
-    expect(publicarMascota('Firulais','Salchicha',6,'Perro','foto.png'
-    )).toEqual('Firulais, Salchicha, 6, Perro, foto.png');
-    });
+    const div = document.createElement('div');
+    const resultado = publicarMascota(div, 'Firulais', 'Salchicha', 6, 'Perro', 'foto.png');
+    expect(resultado).toEqual('<p>Firulais, Salchicha, 6, Perro, foto.png</p>');
+  });
 });

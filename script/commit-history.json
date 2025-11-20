@@ -513,12 +513,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e9bdb8c6527beb2263a2b4dd0bd472a80e3b5b92",
     "author": "pololi15",
     "commit": {
       "date": "2025-11-20T04:14:18.000Z",
       "message": "refactor: segundo refactor para inserta en supabase de publicar-mascota",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/e9bdb8c6527beb2263a2b4dd0bd472a80e3b5b92"
     },
     "stats": {
       "total": 29,
@@ -527,6 +527,25 @@
       "date": "2025-11-20"
     },
     "coverage": 56.52,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pololi15",
+    "commit": {
+      "date": "2025-11-20T04:28:58.000Z",
+      "message": "Refactor: publicar-mascota refactorizado",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 13,
+      "deletions": 12,
+      "date": "2025-11-20"
+    },
+    "coverage": 57.45,
     "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"

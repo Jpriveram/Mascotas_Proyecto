@@ -1,11 +1,13 @@
 import mostrarMascota from "./mostrar-mascota.js";
-import publicarMascota from "./publicar-mascota.js";
+//import publicarMascota from "./publicar-mascota.js";
+import { insertarSupabase } from "./publicar-mascota.js";
 import filtrarMascotasPorEdad from "./filtrar-mascota-edad.js";
 import filtrarMascotasPorRaza from "./filtrar-mascota-raza.js";
 import verDetalleMascota from "./ver-detalle-mascota.js";
 import { supabase } from "./supabaseClient.js";
 import MascotasRepository from "./MascotasRepository.js";
 import MascotasService from "./MascotasService.js";
+import mostrarPublicarMascota from "./publicar-mascota.js";
 
 
 const mascotasRepository = new MascotasRepository();
@@ -71,12 +73,9 @@ form.addEventListener("submit", async (event) => {
     const species = especie.value;
     const photo = foto.value;
 
-    // Insertar en Supabase
+    insertarSupabase(div, name, breed, age, species, photo);
+    mostrarPublicarMascota(div, name, breed, age, species, photo);
     
-    insertarSupabase(name, breed, age, species, photo);
-
-    div.innerHTML = "<p>" + publicarMascota(name, breed, age, species, photo) + "</p>";
-
     // Recargar la lista de mascotas
     await cargarMascotas();
 });

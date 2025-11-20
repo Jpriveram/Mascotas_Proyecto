@@ -1,8 +1,9 @@
-export default function publicarMascota(nombre, raza, edad, especie, foto) {
-  return `${nombre}, ${raza}, ${edad}, ${especie}, ${foto}`;
+export default function mostrarPublicarMascota(div, nombre, raza, edad, especie, foto) {
+  div.innerHTML = "<p>" + `${nombre}, ${raza}, ${edad}, ${especie}, ${foto}` + "</p>";
+  return div.innerHTML;
 }
 
-export async function insertarSupabase(name, breed, age, species, photo) {
+export async function insertarSupabase(div, name, breed, age, species, photo) {
     const { data, error } = await supabase
         .from('mascotas')
         .insert([
