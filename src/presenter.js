@@ -3,16 +3,16 @@ import mostrarMascota from "./mostrar-mascota.js";
 import { insertarSupabase } from "./publicar-mascota.js";
 import filtrarMascotasPorEdad from "./filtrar-mascota-edad.js";
 import filtrarMascotasPorRaza from "./filtrar-mascota-raza.js";
-import verDetalleMascota from "./ver-detalle-mascota.js";
 import { supabase } from "./supabaseClient.js";
 import MascotasRepository from "./MascotasRepository.js";
 import MascotasService from "./MascotasService.js";
 import mostrarPublicarMascota from "./publicar-mascota.js";
+import { crearVerDetalleMascota } from "./ver-detalle-mascota.js";
 
 
 const mascotasRepository = new MascotasRepository();
 const mascotasService = new MascotasService(mascotasRepository);
-
+const verDetalleMascota = crearVerDetalleMascota(mascotasService);
 
 const nombre = document.querySelector("#nombre-mascota");
 const raza = document.querySelector("#raza-mascota");
@@ -52,15 +52,15 @@ async function cargarMascotas() {
         const botones = document.querySelectorAll(".ver-detalle-btn");
         
         botones.forEach((btn) => {
-        btn.addEventListener("click", async () => {
-            const id = btn.dataset.id;
-            await verDetalleMascota(id);
-      });
-    });
-} catch (error) {
-    listaDiv.innerHTML = `<p>Error cargando mascotas: ${error.message}</p>`;
-    console.error("Error cargando mascotas:", error);
-  }
+            btn.addEventListener("click", async () => {
+                const id = btn.dataset.id;
+                await verDetalleMascota(id);
+            });
+         });
+    } catch (error) {
+        listaDiv.innerHTML = `<p>Error cargando mascotas: ${error.message}</p>`;
+        console.error("Error cargando mascotas:", error);
+    }
 }
 
 // Guardar mascota en Supabase al hacer submit en el formulario

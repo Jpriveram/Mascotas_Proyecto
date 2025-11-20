@@ -570,12 +570,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6495161a43b84383e45f52ee111413f58f885096",
     "author": "Leonardo Koller",
     "commit": {
       "date": "2025-11-20T12:08:03.000Z",
       "message": "feat: agregar obtenerMascotaPorId en repositorio y service",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/6495161a43b84383e45f52ee111413f58f885096"
     },
     "stats": {
       "total": 18,
@@ -587,5 +587,24 @@
     "test_count": 0,
     "failed_tests": 0,
     "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-11-20T12:55:40.000Z",
+      "message": "refactor: adaptar verDetalleMascota a arquitectura hexagonal, test: actualizar tests de verDetalleMascota para usar service mock",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 171,
+      "additions": 80,
+      "deletions": 91,
+      "date": "2025-11-20"
+    },
+    "coverage": 60,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
