@@ -1,17 +1,14 @@
-import verDetalleMascota from "./ver-detalle-mascota.js";
-
-jest.mock("./supabaseClient.js", () => ({
-  supabase: {
-    from: jest.fn()
-  }
-}));
-
-import { supabase } from "./supabaseClient.js";
+import { crearVerDetalleMascota } from "./ver-detalle-mascota.js";
 
 describe("verDetalleMascota", () => {
+  let mascotasServiceMock;
+
   beforeEach(() => {
     document.body.innerHTML = '<div id="lista-mascotas"></div>';
-    jest.clearAllMocks(); 
+    mascotasServiceMock = {
+      obtenerMascotaPorId: jest.fn(),
+      listarMascotas: jest.fn(),
+    };
   });
 
   it("debería mostrar los detalles de la mascota correctamente", async () => {
@@ -24,14 +21,10 @@ describe("verDetalleMascota", () => {
       foto: "https://example.com/foto-max.jpg",
     };
 
-    const queryMock = {
-      select: jest.fn().mockReturnThis(),
-      eq: jest.fn().mockReturnThis(),
-      single: jest.fn().mockResolvedValue({ data: mascotaMock, error: null }),
-    };
-
-    supabase.from.mockReturnValue(queryMock);
-
+    mascotasServiceMock.obtenerMascotaPorId.mockResolvedValue(mascotaMock);
+    
+    const verDetalleMascota = crearVerDetalleMascota(mascotasServiceMock);
+    
     await verDetalleMascota(1);
 
     const contenedor = document.querySelector("#lista-mascotas");
@@ -45,16 +38,11 @@ describe("verDetalleMascota", () => {
   });
 
   it("debería manejar errores al obtener los detalles de la mascota", async () => {
-    const queryMock = {
-      select: jest.fn().mockReturnThis(),
-      eq: jest.fn().mockReturnThis(),
-      single: jest.fn().mockResolvedValue({
-        data: null,
-        error: new Error("Error de prueba"),
-      }),
-    };
+    mascotasServiceMock.obtenerMascotaPorId.mockRejectedValue(
+      new Error("Error de prueba")
+    );
 
-    supabase.from.mockReturnValue(queryMock);
+    const verDetalleMascota = crearVerDetalleMascota(mascotasServiceMock);
 
     await verDetalleMascota(999);
 

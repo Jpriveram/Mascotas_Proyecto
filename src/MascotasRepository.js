@@ -13,4 +13,17 @@ export default class MascotasRepository {
         
         return mascotas;
     }
+     async obtenerMascotaPorId(id) {
+        const { data: mascota, error } = await supabase
+            .from("mascotas")
+            .select("*")
+            .eq("id", id)
+            .single();
+
+        if (error) {
+            throw error;
+        }
+
+        return mascota;
+    }
 }

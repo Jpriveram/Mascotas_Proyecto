@@ -1,58 +1,59 @@
-import { supabase } from "./supabaseClient.js";
+import mostrarMascota from "./mostrar-mascota.js";
 
-async function verDetalleMascota(id) {
-  const contenedor = document.querySelector("#lista-mascotas");
+export function crearVerDetalleMascota(mascotasService) {
+  return async function verDetalleMascota(id) {
+    const contenedor = document.querySelector("#lista-mascotas");
 
-  try {
-    const { data: mascota, error } = await supabase
-      .from("mascotas")
-      .select("*")
-      .eq("id", id)
-      .single();
+    try {
+      const mascota = await mascotasService.obtenerMascotaPorId(id);
 
-    if (error) throw error;
+      contenedor.innerHTML = `
+        <div class="detalle-mascota">
+          <h2>${mascota.nombre}</h2>
+          <img src="${mascota.foto}" alt="Foto de ${mascota.nombre}" style="max-width:300px;">
+          <p><strong>Especie:</strong> ${mascota.especie}</p>
+          <p><strong>Raza:</strong> ${mascota.raza}</p>
+          <p><strong>Edad:</strong> ${mascota.edad}</p>
+          <button id="volver-btn">Volver</button>
+        </div>
+      `;
 
-    contenedor.innerHTML = `
-      <div class="detalle-mascota">
-        <h2>${mascota.nombre}</h2>
-        <img src="${mascota.foto}" alt="Foto de ${mascota.nombre}" style="max-width:300px;">
-        <p><strong>Especie:</strong> ${mascota.especie}</p>
-        <p><strong>Raza:</strong> ${mascota.raza}</p>
-        <p><strong>Edad:</strong> ${mascota.edad}</p>
-        <button id="volver-btn">Volver</button>
-      </div>
-    `;
+      document.querySelector("#volver-btn").addEventListener("click", async () => {
+        await cargarListaOriginal(mascotasService);
+      });
 
-    document.querySelector("#volver-btn").addEventListener("click", async () => {
-      await cargarListaOriginal();
-    });
-
-  } catch (error) {
-    contenedor.innerHTML = `<p>Error al cargar detalles: ${error.message}</p>`;
-  }
+    } catch (error) {
+      contenedor.innerHTML = `<p>Error al cargar detalles: ${error.message}</p>`;
+      console.error("Error al cargar detalles:", error);
+    }
+ }
 }
 
-async function cargarListaOriginal() {
-  const { data: mascotas, error } = await supabase.from("mascotas").select("*");
+async function cargarListaOriginal(mascotasService) {
   const listaDiv = document.querySelector("#lista-mascotas");
-  if (error) {
+  
+  try {
+      const mascotas = await mascotasService.listarMascotas();
+  
+      let html = "";
+      mascotas.forEach((m) => {
+        html += mostrarMascota(m);
+      });
+  
+      listaDiv.innerHTML = html;
+
+      const botones = document.querySelectorAll(".ver-detalle-btn");
+      botones.forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          const id = btn.dataset.id;
+          const verDetalleMascota = crearVerDetalleMascota(mascotasService);
+          await verDetalleMascota(id);
+        });
+      });
+  } catch (error) {
     listaDiv.innerHTML = `<p>Error recargando lista: ${error.message}</p>`;
-    return;
+    console.error("Error recargando lista:", error);
   }
-
-  const { default: mostrarMascota } = await import("./mostrar-mascota.js");
-
-  let html = "";
-  mascotas.forEach((m) => (html += mostrarMascota(m)));
-  listaDiv.innerHTML = html;
-
-  const botones = document.querySelectorAll(".ver-detalle-btn");
-  botones.forEach((btn) => {
-    btn.addEventListener("click", async () => {
-      const id = btn.dataset.id;
-      await verDetalleMascota(id);
-    });
-  });
+    
 }
-
-export default verDetalleMascota;
+    
