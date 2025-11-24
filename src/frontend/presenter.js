@@ -117,9 +117,38 @@ buscarBtn.addEventListener("click", async () => {
 buscarRazaBtn.addEventListener("click", async () => {
   const razaBuscada = CampoRaza.value.trim();
 
-  // Mostrar mensaje temporal mientras carga
-  divFiltrarRaza.innerHTML = "<p>Buscando mascotas...</p>";
+  if (!razaBuscada) {
+    divFiltrarRaza.innerHTML = "<p>Por favor, ingrese una raza para buscar.</p>";
+    return;
+  }     
 
-  const html = await filtrarMascotasPorRaza(razaBuscada);
-  divFiltrarRaza.innerHTML = html;
+  try{
+    
+    const { data: mascotas, error } = await supabase
+      .from("mascotas")
+      .select("*")
+      .ilike("raza", razaBuscada); // ilike = case insensitive
+    
+    if (error){
+      throw error;
+    } 
+  
+    const filtradas = filtrarMascotasPorRaza(razaBuscada,mascotas );
+   
+    if (!filtradas || filtradas.length === 0) {
+      divFiltrarRaza.innerHTML = "<p>No existen mascotas con esa raza.</p>";
+      return;
+    }
+
+    let html = "";
+    filtradas.forEach((mascota) => {
+      html += mostrarMascota(mascota);
+    });
+
+    divFiltrarRaza.innerHTML = html;
+    
+    } catch(error){
+      divFiltrarRaza.innerHTML = `<p>Error filtrando mascotas: ${error.message}</p>`;
+      console.error("Error filtrando mascotas:", error);
+    }
 });

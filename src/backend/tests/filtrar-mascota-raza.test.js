@@ -1,32 +1,28 @@
 import filtrarMascotasPorRaza from '../../filtrar-mascota-raza.js';
-
-jest.mock("@supabase/supabase-js");
+import data from '../../backend/data/mascotas.json';
 
 describe('filtrarMascotasPorRaza', () => {
 
-  it('debería devolver el HTML correcto para las mascotas que coincidan con la raza', async () => {
-    const resultado = await filtrarMascotasPorRaza('Angora');
+  it('debería devolver el array correcto para las mascotas que coincidan con la raza', () => {
+      const raza = "Angora";
 
-    expect(resultado).toContain("<h3>Nube</h3>");
-    expect(resultado).toContain("Especie: Gato");
-    expect(resultado).toContain("Raza: Angora");
+      const resultado = filtrarMascotasPorRaza(raza, data.mascotas);
+
+      const esperado = data.mascotas.filter(
+          (m) => m.raza.toLowerCase() === raza.toLowerCase()
+      );
+
+      expect(resultado).toEqual(esperado);
   });
 
-  it('debería devolver un mensaje si no se ingresa una raza', async () => {
-    const resultado = await filtrarMascotasPorRaza('');
-    expect(resultado).toContain('Por favor, ingrese una raza');
+  it('debería devolver un array vacío si no se ingresa una raza', () => {
+      const resultado = filtrarMascotasPorRaza('', data.mascotas);
+      expect(resultado).toEqual([]);
   });
 
-  it('debería devolver un mensaje si no existen mascotas con la raza buscada', async () => {
-
-    // Sobrescribir mock para este test
-    const { createClient } = require('@supabase/supabase-js');
-    createClient().from().select().ilike = () => ({
-      data: [],
-      error: null
-    });
-
-    const resultado = await filtrarMascotasPorRaza('Schnauzer');
-    expect(resultado).toContain('No existen mascotas');
+  it('debería devolver un array vacío si no existen mascotas con la raza buscada', () => {
+      const resultado = filtrarMascotasPorRaza('Schnauzer', data.mascotas);
+      expect(resultado).toEqual([]);
   });
+
 });
