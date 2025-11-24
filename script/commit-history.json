@@ -817,17 +817,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4866fefab8089baf80180d85ac8aaed5f6858447",
     "author": "Alejandro Alvarez",
     "commit": {
       "date": "2025-11-24T18:30:48.000Z",
       "message": "refactor: se inyecta la dependencia del repositorio al MascotasService",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/4866fefab8089baf80180d85ac8aaed5f6858447"
     },
     "stats": {
       "total": 7,
       "additions": 6,
       "deletions": 1,
+      "date": "2025-11-24"
+    },
+    "coverage": 56.76,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-11-24T18:44:07.000Z",
+      "message": "chore: quito archivo de supabase mockeado que ya no se usa",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 27,
+      "additions": 0,
+      "deletions": 27,
       "date": "2025-11-24"
     },
     "coverage": 56.76,
