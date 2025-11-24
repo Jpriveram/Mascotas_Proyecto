@@ -608,12 +608,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "513619950251362acd308c4d689fce785df850a9",
     "author": "Alejandro Alvarez",
     "commit": {
       "date": "2025-11-24T00:49:01.000Z",
       "message": "feat: Ahora las mascotas filtradas por raza se obtienen desde la bd",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/513619950251362acd308c4d689fce785df850a9"
     },
     "stats": {
       "total": 123,
@@ -622,6 +622,25 @@
       "date": "2025-11-24"
     },
     "coverage": 56.86,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pololi15",
+    "commit": {
+      "date": "2025-11-24T03:27:59.000Z",
+      "message": "Refactor: Del refactor publicar-mascota",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 34,
+      "additions": 19,
+      "deletions": 15,
+      "date": "2025-11-24"
+    },
+    "coverage": 61.7,
     "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"

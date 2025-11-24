@@ -12,4 +12,8 @@ export default class MascotasService {
         const mascota = await this.mascotasRepository.obtenerMascotaPorId(id);
         return mascota;
     }
+
+    async publicarMascota(nombre, raza, edad, especie, foto) {
+        await this.mascotasRepository.insertarMascota(nombre, raza, edad, especie, foto);
+    }
 }

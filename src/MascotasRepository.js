@@ -26,4 +26,15 @@ export default class MascotasRepository {
 
         return mascota;
     }
+
+    async insertarMascota(nombre, raza, edad, especie, foto) {
+        const {data, error} = await supabase
+            .from('mascotas')
+            .insert([
+                { nombre: nombre, raza: raza, edad: edad, especie: especie, foto: foto }
+            ]);
+        if (error) {
+            throw error;
+        }
+    }
 }
