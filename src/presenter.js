@@ -92,7 +92,7 @@ buscarBtn.addEventListener("click", async () => {
 
     try {
         // Traer todas las mascotas del rango desde Supabase
-        const mascotas = await mascotasRepository.filtrarMascotasPorEdadBd(desde,hasta);
+        const mascotas = await mascotasService.filtrarMascotasPorEdadBd(desde,hasta);
 
         // Usar la función filtradora para mantener estructura y testabilidad
         const filtradas = filtrarMascotasPorEdad(desde, hasta, mascotas);
