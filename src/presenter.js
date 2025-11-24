@@ -74,12 +74,8 @@ form.addEventListener("submit", async (event) => {
     const photo = foto.value;
 
     mascotasService.publicarMascota(name, breed, age, species, photo);
-
-    
-    //insertarSupabase(div, name, breed, age, species, photo);
     mostrarPublicarMascota(div, name, breed, age, species, photo);
     
-    // Recargar la lista de mascotas
     await cargarMascotas();
 });
 

@@ -627,17 +627,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "dfa19a3c97b6497f0af3d8f222b4043ebfb74fb6",
     "author": "pololi15",
     "commit": {
       "date": "2025-11-24T03:27:59.000Z",
       "message": "Refactor: Del refactor publicar-mascota",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/dfa19a3c97b6497f0af3d8f222b4043ebfb74fb6"
     },
     "stats": {
       "total": 34,
       "additions": 19,
       "deletions": 15,
+      "date": "2025-11-24"
+    },
+    "coverage": 61.7,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pololi15",
+    "commit": {
+      "date": "2025-11-24T03:34:07.000Z",
+      "message": "Refactor",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 0,
+      "deletions": 4,
       "date": "2025-11-24"
     },
     "coverage": 61.7,
