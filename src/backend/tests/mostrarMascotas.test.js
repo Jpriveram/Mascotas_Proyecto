@@ -1,4 +1,4 @@
-import mostrarMascota from './mostrar-mascota.js';
+import mostrarMascota from '../../mostrar-mascota.js';
 
 describe('mostrarMascota', () => {
   it('debería devolver un HTML válido con los datos de la mascota', () => {

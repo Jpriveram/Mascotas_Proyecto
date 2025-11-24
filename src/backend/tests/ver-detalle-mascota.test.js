@@ -1,4 +1,4 @@
-import { crearVerDetalleMascota } from "./ver-detalle-mascota.js";
+import { crearVerDetalleMascota } from "../../ver-detalle-mascota.js";
 
 describe("verDetalleMascota", () => {
   let mascotasServiceMock;
@@ -38,6 +38,7 @@ describe("verDetalleMascota", () => {
   });
 
   it("debería manejar errores al obtener los detalles de la mascota", async () => {
+    console.error = jest.fn();
     mascotasServiceMock.obtenerMascotaPorId.mockRejectedValue(
       new Error("Error de prueba")
     );

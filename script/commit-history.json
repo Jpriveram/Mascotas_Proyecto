@@ -722,17 +722,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b2c834daaf752791eff8950b13e9b7019ebf181d",
     "author": "Alejandro Alvarez",
     "commit": {
       "date": "2025-11-24T05:42:06.000Z",
       "message": "refactor: se inyecta la dependencia del repositorio  al MascotasService",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/b2c834daaf752791eff8950b13e9b7019ebf181d"
     },
     "stats": {
       "total": 9,
       "additions": 7,
       "deletions": 2,
+      "date": "2025-11-24"
+    },
+    "coverage": 61.7,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "oscarperez-Revons",
+    "commit": {
+      "date": "2025-11-24T14:49:14.000Z",
+      "message": "Feat: Se organiza el proyecto en carpetas frontend/backend siguiendo la arquitectura hexagonal",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 1681,
+      "additions": 1505,
+      "deletions": 176,
       "date": "2025-11-24"
     },
     "coverage": 61.7,

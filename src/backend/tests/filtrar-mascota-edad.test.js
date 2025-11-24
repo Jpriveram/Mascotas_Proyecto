@@ -1,5 +1,5 @@
-import filtrarMascotasPorEdad from './filtrar-mascota-edad.js';
-import data from '../mascotas.json';
+import filtrarMascotasPorEdad from '../../filtrar-mascota-edad.js';
+import data from '../../backend/data/mascotas.json';
 
 describe('filtrarMascotasPorEdad', () => {
     it('debería devolver el array correcto para las mascotas dentro del rango de edad', () => {

@@ -1,4 +1,4 @@
-export default class MascotasService {
+export class MascotasService {
     constructor(mascotasRepository) {
         this.mascotasRepository = mascotasRepository;
     }

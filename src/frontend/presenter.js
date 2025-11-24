@@ -1,13 +1,13 @@
-import mostrarMascota from "./mostrar-mascota.js";
+import mostrarMascota from "../mostrar-mascota.js";
 //import publicarMascota from "./publicar-mascota.js";
-import { insertarSupabase } from "./publicar-mascota.js";
-import filtrarMascotasPorEdad from "./filtrar-mascota-edad.js";
-import filtrarMascotasPorRaza from "./filtrar-mascota-raza.js";
-import { supabase } from "./supabaseClient.js";
-import MascotasRepository from "./MascotasRepository.js";
-import MascotasService from "./MascotasService.js";
-import mostrarPublicarMascota from "./publicar-mascota.js";
-import { crearVerDetalleMascota } from "./ver-detalle-mascota.js";
+import { insertarSupabase } from "../publicar-mascota.js";
+import filtrarMascotasPorEdad from "../filtrar-mascota-edad.js";
+import filtrarMascotasPorRaza from "../filtrar-mascota-raza.js";
+import { supabase } from "../supabaseClient.js";
+import { MascotasRepository } from "../backend/infrastructure/MascotasRepository.js";
+import { MascotasService } from "../backend/services/MascotasService.js";
+import mostrarPublicarMascota from "../publicar-mascota.js";
+import { crearVerDetalleMascota } from "../ver-detalle-mascota.js";
 
 
 const mascotasRepository = new MascotasRepository();

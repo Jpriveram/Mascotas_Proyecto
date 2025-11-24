@@ -1,4 +1,4 @@
-import filtrarMascotasPorRaza from './filtrar-mascota-raza.js';
+import filtrarMascotasPorRaza from '../../filtrar-mascota-raza.js';
 
 jest.mock("@supabase/supabase-js");
 

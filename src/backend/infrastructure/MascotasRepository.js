@@ -1,6 +1,6 @@
-import { supabase } from "./supabaseClient.js";
+import { supabase } from '../../supabaseClient.js';
 
-export default class MascotasRepository {
+export class MascotasRepository {
     
     async obtenerMascotas() {
         const { data: mascotas, error } = await supabase
