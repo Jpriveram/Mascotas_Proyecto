@@ -646,17 +646,55 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8c27edf48972ac8e5ac8553129bfe50da0b73f2f",
     "author": "pololi15",
     "commit": {
       "date": "2025-11-24T03:34:07.000Z",
       "message": "Refactor",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/8c27edf48972ac8e5ac8553129bfe50da0b73f2f"
     },
     "stats": {
       "total": 4,
       "additions": 0,
       "deletions": 4,
+      "date": "2025-11-24"
+    },
+    "coverage": 61.7,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-11-24T03:35:30.000Z",
+      "message": "refactor: Se extrajo el metodo filtrarMascotasPorEdadBd",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 15,
+      "deletions": 7,
+      "date": "2025-11-24"
+    },
+    "coverage": 56.86,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-11-24T04:53:24.000Z",
+      "message": "refactor: Se extrajo el metodo filtrarMascotasPorEdadBd",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 15,
+      "deletions": 7,
       "date": "2025-11-24"
     },
     "coverage": 61.7,
