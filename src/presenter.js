@@ -79,20 +79,6 @@ form.addEventListener("submit", async (event) => {
     await cargarMascotas();
 });
 
-
-async function filtrarMascotasPorEdadBd(desde, hasta) {
-    const { data: mascotas, error } = await supabase
-            .from('mascotas')
-            .select('*')
-            .gte('edad', desde)
-            .lte('edad', hasta);
-
-        if (error) throw error;
-    
-    return mascotas;
-}
-
-
 // Filtrar mascotas por edad usando los datos de Supabase
 buscarBtn.addEventListener("click", async () => {
     const desde = Number.parseInt(edadDesde.value);  
@@ -106,7 +92,7 @@ buscarBtn.addEventListener("click", async () => {
 
     try {
         // Traer todas las mascotas del rango desde Supabase
-        const mascotas = await filtrarMascotasPorEdadBd(desde, hasta);
+        const mascotas = await mascotasRepository.filtrarMascotasPorEdadBd(desde,hasta);
 
         // Usar la función filtradora para mantener estructura y testabilidad
         const filtradas = filtrarMascotasPorEdad(desde, hasta, mascotas);

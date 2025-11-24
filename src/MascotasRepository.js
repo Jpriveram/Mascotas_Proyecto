@@ -13,7 +13,8 @@ export default class MascotasRepository {
         
         return mascotas;
     }
-     async obtenerMascotaPorId(id) {
+    
+    async obtenerMascotaPorId(id) {
         const { data: mascota, error } = await supabase
             .from("mascotas")
             .select("*")
@@ -36,5 +37,19 @@ export default class MascotasRepository {
         if (error) {
             throw error;
         }
+    }
+    
+    async filtrarMascotasPorEdadBd(desde, hasta) {
+        const { data: mascotas, error } = await supabase
+            .from('mascotas')
+            .select('*')
+            .gte('edad', desde)
+            .lte('edad', hasta);
+    
+        if (error) {
+            throw error;
+        }
+
+        return mascotas;
     }
 }
