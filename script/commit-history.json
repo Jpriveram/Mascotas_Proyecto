@@ -798,17 +798,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "96cc6297db66c0e3b4c8662ac1885acf4654eda9",
     "author": "Alejandro Alvarez",
     "commit": {
       "date": "2025-11-24T18:27:25.000Z",
       "message": "refactor: se movio el metodo a donde corresponde MascotasRepository",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/96cc6297db66c0e3b4c8662ac1885acf4654eda9"
     },
     "stats": {
       "total": 28,
       "additions": 14,
       "deletions": 14,
+      "date": "2025-11-24"
+    },
+    "coverage": 56.76,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-11-24T18:30:48.000Z",
+      "message": "refactor: se inyecta la dependencia del repositorio al MascotasService",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 6,
+      "deletions": 1,
       "date": "2025-11-24"
     },
     "coverage": 56.76,

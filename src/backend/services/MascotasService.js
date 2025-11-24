@@ -21,4 +21,9 @@ export class MascotasService {
         const mascotas = await this.mascotasRepository.filtrarMascotasPorEdadBd(desde, hasta);
         return mascotas;
     }
+
+    async filtrarMascotasPorRazaBd(razaBuscada) {
+        const mascotas = await this.mascotasRepository.filtrarMascotasPorRazaBd(razaBuscada);
+        return mascotas;
+    }
 }

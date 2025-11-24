@@ -124,7 +124,7 @@ buscarRazaBtn.addEventListener("click", async () => {
 
   try{
 
-    const mascotas = await mascotasRepository.filtrarMascotasPorRazaBd(razaBuscada);
+    const mascotas = await mascotasService.filtrarMascotasPorRazaBd(razaBuscada);
     const filtradas = filtrarMascotasPorRaza(razaBuscada,mascotas );
    
     if (!filtradas || filtradas.length === 0) {
