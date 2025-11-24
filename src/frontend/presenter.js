@@ -114,6 +114,19 @@ buscarBtn.addEventListener("click", async () => {
     }
 });
 
+async function filtrarMascotasPorRazaBd(razaBuscada){
+  const { data: mascotas, error } = await supabase
+      .from("mascotas")
+      .select("*")
+      .ilike("raza", razaBuscada); // ilike = case insensitive
+    
+    if (error){
+      throw error;
+    } 
+
+    return mascotas;
+}
+
 buscarRazaBtn.addEventListener("click", async () => {
   const razaBuscada = CampoRaza.value.trim();
 
@@ -123,23 +136,15 @@ buscarRazaBtn.addEventListener("click", async () => {
   }     
 
   try{
-    
-    const { data: mascotas, error } = await supabase
-      .from("mascotas")
-      .select("*")
-      .ilike("raza", razaBuscada); // ilike = case insensitive
-    
-    if (error){
-      throw error;
-    } 
-  
+
+    const mascotas = await filtrarMascotasPorRazaBd(razaBuscada);
     const filtradas = filtrarMascotasPorRaza(razaBuscada,mascotas );
    
     if (!filtradas || filtradas.length === 0) {
       divFiltrarRaza.innerHTML = "<p>No existen mascotas con esa raza.</p>";
       return;
     }
-
+    
     let html = "";
     filtradas.forEach((mascota) => {
       html += mostrarMascota(mascota);

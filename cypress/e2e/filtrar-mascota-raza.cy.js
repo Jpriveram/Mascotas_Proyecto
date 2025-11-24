@@ -18,16 +18,16 @@ describe("Mascotas", () => {
     cy.visit("/");
   });
 
-it("Filtrar mascota por raza con resultados (Bulldog → Balto)", () => {
-  cy.get("#raza-filtro").clear().type("Bulldog");
+it("Filtrar mascota por raza con resultados (Pitbull → Togo)", () => {
+  cy.get("#raza-filtro").clear().type("Pitbull");
   cy.get("#buscar-raza-button").click();
 
   cy.get("#resultado-buscar-raza-div .mascota-item")
     .should("have.length.at.least", 1);
 
   cy.get("#resultado-buscar-raza-div")
-    .should("contain", "Balto")
-    .and("contain", "Bulldog");
+    .should("contain", "Togo")
+    .and("contain", "Pitbull");
 });
 
   it("Filtrar mascota por raza sin resultados (Mestizo)", () => {

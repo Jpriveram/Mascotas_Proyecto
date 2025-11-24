@@ -760,17 +760,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "58d91c0beb80562ed7cf51b6a5cb483426444966",
     "author": "Alejandro Alvarez",
     "commit": {
       "date": "2025-11-24T18:11:05.000Z",
       "message": "refactor: muevo la logica de negocio html y el filtro de la bd dejando solo logica pura en la funcion para testeabilidad",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/58d91c0beb80562ed7cf51b6a5cb483426444966"
     },
     "stats": {
       "total": 115,
       "additions": 59,
       "deletions": 56,
+      "date": "2025-11-24"
+    },
+    "coverage": 56.76,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-11-24T18:24:04.000Z",
+      "message": "Se extrajo el metodo filtrarMascotasPorRazaBd",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 35,
+      "additions": 20,
+      "deletions": 15,
       "date": "2025-11-24"
     },
     "coverage": 56.76,
