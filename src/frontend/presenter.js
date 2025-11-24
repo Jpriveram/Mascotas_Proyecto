@@ -114,19 +114,6 @@ buscarBtn.addEventListener("click", async () => {
     }
 });
 
-async function filtrarMascotasPorRazaBd(razaBuscada){
-  const { data: mascotas, error } = await supabase
-      .from("mascotas")
-      .select("*")
-      .ilike("raza", razaBuscada); // ilike = case insensitive
-    
-    if (error){
-      throw error;
-    } 
-
-    return mascotas;
-}
-
 buscarRazaBtn.addEventListener("click", async () => {
   const razaBuscada = CampoRaza.value.trim();
 
@@ -137,7 +124,7 @@ buscarRazaBtn.addEventListener("click", async () => {
 
   try{
 
-    const mascotas = await filtrarMascotasPorRazaBd(razaBuscada);
+    const mascotas = await mascotasRepository.filtrarMascotasPorRazaBd(razaBuscada);
     const filtradas = filtrarMascotasPorRaza(razaBuscada,mascotas );
    
     if (!filtradas || filtradas.length === 0) {

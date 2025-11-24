@@ -779,17 +779,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c8b094dd5dc1bf21442e6a0a3b7dac6fc386d120",
     "author": "Alejandro Alvarez",
     "commit": {
       "date": "2025-11-24T18:24:04.000Z",
       "message": "Se extrajo el metodo filtrarMascotasPorRazaBd",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/c8b094dd5dc1bf21442e6a0a3b7dac6fc386d120"
     },
     "stats": {
       "total": 35,
       "additions": 20,
       "deletions": 15,
+      "date": "2025-11-24"
+    },
+    "coverage": 56.76,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-11-24T18:27:25.000Z",
+      "message": "refactor: se movio el metodo a donde corresponde MascotasRepository",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 14,
+      "deletions": 14,
       "date": "2025-11-24"
     },
     "coverage": 56.76,
