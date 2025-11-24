@@ -589,12 +589,12 @@
     "conclusion": "neutral"
   },
   {
-    "sha": "HEAD",
+    "sha": "190560a51286826281220e191b6acaf900d58e25",
     "author": "Leonardo Koller",
     "commit": {
       "date": "2025-11-20T12:55:40.000Z",
       "message": "refactor: adaptar verDetalleMascota a arquitectura hexagonal, test: actualizar tests de verDetalleMascota para usar service mock",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/190560a51286826281220e191b6acaf900d58e25"
     },
     "stats": {
       "total": 171,
@@ -603,6 +603,25 @@
       "date": "2025-11-20"
     },
     "coverage": 60,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-11-24T00:49:01.000Z",
+      "message": "feat: Ahora las mascotas filtradas por raza se obtienen desde la bd",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 123,
+      "additions": 81,
+      "deletions": 42,
+      "date": "2025-11-24"
+    },
+    "coverage": 56.86,
     "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"

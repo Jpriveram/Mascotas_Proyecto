@@ -121,8 +121,12 @@ buscarBtn.addEventListener("click", async () => {
     }
 });
 
-buscarRazaBtn.addEventListener("click", () => {
-  const razaBuscada = CampoRaza.value;
-  const html = filtrarMascotasPorRaza(razaBuscada);
+buscarRazaBtn.addEventListener("click", async () => {
+  const razaBuscada = CampoRaza.value.trim();
+
+  // Mostrar mensaje temporal mientras carga
+  divFiltrarRaza.innerHTML = "<p>Buscando mascotas...</p>";
+
+  const html = await filtrarMascotasPorRaza(razaBuscada);
   divFiltrarRaza.innerHTML = html;
 });
