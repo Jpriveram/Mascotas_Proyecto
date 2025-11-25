@@ -1,14 +1,23 @@
-import { crearVerDetalleMascota } from "../../ver-detalle-mascota.js";
+import { verDetalleMascota as crearVerDetalleMascota } from "../../ver-detalle-mascota.js";
 
 describe("verDetalleMascota", () => {
   let mascotasServiceMock;
+  let originalConsoleError;
 
   beforeEach(() => {
+    originalConsoleError = console.error;
+    
     document.body.innerHTML = '<div id="lista-mascotas"></div>';
+    
     mascotasServiceMock = {
       obtenerMascotaPorId: jest.fn(),
       listarMascotas: jest.fn(),
     };
+  });
+  
+  afterEach(() => {
+    console.error = originalConsoleError;
+    jest.clearAllMocks();
   });
 
   it("debería mostrar los detalles de la mascota correctamente", async () => {
@@ -33,12 +42,14 @@ describe("verDetalleMascota", () => {
     expect(html).toContain("<h2>Max</h2>");
     expect(html).toContain("<p><strong>Especie:</strong> Perro</p>");
     expect(html).toContain("<p><strong>Raza:</strong> Labrador</p>");
-    expect(html).toContain("<p><strong>Edad:</strong> 5</p>");
+    expect(html).toContain("<p><strong>Edad:</strong> 5 años</p>"); 
     expect(html).toContain('src="https://example.com/foto-max.jpg"');
+    expect(html).toContain("<p><strong>ID de Publicación:</strong> 1</p>");
   });
 
-  it("debería manejar errores al obtener los detalles de la mascota", async () => {
+  it("debería manejar errores al obtener los detalles de la mascota (y silenciar el log)", async () => {
     console.error = jest.fn();
+    
     mascotasServiceMock.obtenerMascotaPorId.mockRejectedValue(
       new Error("Error de prueba")
     );
@@ -51,5 +62,6 @@ describe("verDetalleMascota", () => {
     expect(contenedor.innerHTML).toContain(
       "Error al cargar detalles: Error de prueba"
     );
+    expect(console.error).toHaveBeenCalled();
   });
 });

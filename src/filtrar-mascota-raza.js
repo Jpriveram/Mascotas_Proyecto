@@ -1,33 +1,24 @@
 import mostrarMascota from "./mostrar-mascota.js";
-import { supabase } from "./supabaseClient.js";
-
-async function filtrarMascotasPorRaza(razaMascota) {
-  if (!razaMascota) {
+export default async function filtrarMascotasPorRaza(razaMascota, mascotasAdapter) {
+  if (!razaMascota || razaMascota.trim() === "") {
     return "<p>Por favor, ingrese una raza para buscar.</p>";
   }
 
-  // Consulta a Supabase ignorando mayúsculas/minúsculas
-  const { data, error } = await supabase
-    .from("mascotas")
-    .select("*")
-    .ilike("raza", razaMascota); // ilike = case insensitive
+  try {
+    const mascotas = await mascotasAdapter.filtrarMascotasPorRaza(razaMascota);
+    if (!mascotas || mascotas.length === 0) {
+      return "<p>No existen mascotas con esa raza.</p>";
+    }
 
-  if (error) {
-    console.error("Error al consultar Supabase:", error.message);
-    return "<p>Ocurrió un error al buscar en la base de datos.</p>";
+    let html = "";
+    mascotas.forEach((m) => {
+      html += mostrarMascota(m);
+    });
+
+    return html;
+  } catch (error) {
+    console.error("Error al filtrar por raza desde el frontend:", error.message);
+    return `<p>Ocurrió un error al buscar: ${error.message}</p>`;
   }
 
-  if (!data || data.length === 0) {
-    return "<p>No existen mascotas con esa raza.</p>";
-  }
-
-  // Construir el HTML con las mascotas encontradas
-  let html = "";
-  data.forEach((m) => {
-    html += mostrarMascota(m);
-  });
-
-  return html;
 }
-
-export default filtrarMascotasPorRaza;

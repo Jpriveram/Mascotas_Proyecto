@@ -741,12 +741,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6b00bf9dbfd200b20b69cf8d2fda2ef956ea27fc",
     "author": "oscarperez-Revons",
     "commit": {
       "date": "2025-11-24T14:49:14.000Z",
       "message": "Feat: Se organiza el proyecto en carpetas frontend/backend siguiendo la arquitectura hexagonal",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/6b00bf9dbfd200b20b69cf8d2fda2ef956ea27fc"
     },
     "stats": {
       "total": 1681,
@@ -755,6 +755,25 @@
       "date": "2025-11-24"
     },
     "coverage": 61.7,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "oscarperez-Revons",
+    "commit": {
+      "date": "2025-11-25T09:22:11.000Z",
+      "message": "Refactorizacion, conexion a Neon, implementacion REST",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 1681,
+      "additions": 985,
+      "deletions": 696,
+      "date": "2025-11-25"
+    },
+    "coverage": 81.82,
     "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"
