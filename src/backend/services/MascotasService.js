@@ -27,4 +27,9 @@ export class MascotasService {
         const mascotas = await this.mascotasRepository.filtrarMascotasPorRaza(raza);
         return mascotas;
     }
+
+    async filtrarMascotasPorRazaBd(razaBuscada) {
+        const mascotas = await this.mascotasRepository.filtrarMascotasPorRazaBd(razaBuscada);
+        return mascotas;
+    }
 }

@@ -9,8 +9,27 @@
         
         <header>
             <h1>Adopción de Mascotas</h1>
+            <!-- Botón de cierre de sesión -->
+            <button id="cerrar-sesion" style="display:none;">Cerrar sesión</button>
         </header>
 
+        <!-- Formulario de inicio de sesión -->
+        <section id="login-section">
+            <h2>Iniciar sesión</h2>
+            <form id="formulario-login">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" required />
+                
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" required />
+                
+                <button type="submit">Iniciar sesión</button>
+            </form>
+            <p id="mensaje-exito"></p>
+            <p id="mensaje-error"></p>
+        </section>
+
+        <!-- Lista de mascotas en adopción -->
         <section class="lista-mascotas-section">
             <h2>Mascotas en Adopción</h2>
             <div id="lista-mascotas"></div>

@@ -64,4 +64,17 @@ export class MascotasRepository {
             throw new Error("Fallo al filtrar mascotas por raza.");
         }
     }
+
+    async filtrarMascotasPorRazaBd(razaBuscada){
+      const { data: mascotas, error } = await supabase
+          .from("mascotas")
+          .select("*")
+          .ilike("raza", razaBuscada); 
+        
+        if (error){
+          throw error;
+        } 
+    
+        return mascotas;
+    }
 }
