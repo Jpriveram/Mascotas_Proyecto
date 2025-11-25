@@ -8,7 +8,7 @@ import MascotasRepository from "./MascotasRepository.js";
 import MascotasService from "./MascotasService.js";
 import mostrarPublicarMascota from "./publicar-mascota.js";
 import { crearVerDetalleMascota } from "./ver-detalle-mascota.js";
-
+import { agregarFormularioInicioSesion, agregarFormularioCerrarSesion } from './autenticacionController.js';
 
 const mascotasRepository = new MascotasRepository();
 const mascotasService = new MascotasService(mascotasRepository);
@@ -34,6 +34,11 @@ const divFiltrarRaza = document.querySelector("#resultado-buscar-raza-div");
 
 // Cargar todas las mascotas al cargar la página
 document.addEventListener("DOMContentLoaded", async () => {
+    // Activa las funcionalidades de inicio y cierre de sesión
+    agregarFormularioInicioSesion(); // Activa el formulario de inicio de sesión
+    agregarFormularioCerrarSesion(); // Activa el botón de cierre de sesión
+    
+    // Luego, carga las mascotas
     await cargarMascotas();
 });
 

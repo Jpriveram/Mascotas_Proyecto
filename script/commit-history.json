@@ -741,17 +741,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "07441985aeffaf23e5b10e2891aa00a52e5df95f",
     "author": "Leonardo Koller",
     "commit": {
       "date": "2025-11-25T06:24:46.000Z",
       "message": "test: Agregar pruebas de Cypress para inicio y cierre de sesión",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/07441985aeffaf23e5b10e2891aa00a52e5df95f"
     },
     "stats": {
       "total": 30,
       "additions": 30,
       "deletions": 0,
+      "date": "2025-11-25"
+    },
+    "coverage": 62.07,
+    "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-11-25T06:32:00.000Z",
+      "message": "feat: Agregar inicio y cierre de session al presenter",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 6,
+      "deletions": 1,
       "date": "2025-11-25"
     },
     "coverage": 62.07,
