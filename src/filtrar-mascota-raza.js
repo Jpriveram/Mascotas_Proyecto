@@ -1,11 +1,24 @@
-export default function filtrarMascotasPorRaza(raza, mascotas) {
-    if (!raza || typeof raza !== "string") {
-        return [];
+import mostrarMascota from "./mostrar-mascota.js";
+export default async function filtrarMascotasPorRaza(razaMascota, mascotasAdapter) {
+  if (!razaMascota || razaMascota.trim() === "") {
+    return "<p>Por favor, ingrese una raza para buscar.</p>";
+  }
+
+  try {
+    const mascotas = await mascotasAdapter.filtrarMascotasPorRaza(razaMascota);
+    if (!mascotas || mascotas.length === 0) {
+      return "<p>No existen mascotas con esa raza.</p>";
     }
 
-    const razaLower = raza.toLowerCase();
+    let html = "";
+    mascotas.forEach((m) => {
+      html += mostrarMascota(m);
+    });
 
-    return mascotas.filter(
-        (mascota) => mascota.raza.toLowerCase() === razaLower
-    );
+    return html;
+  } catch (error) {
+    console.error("Error al filtrar por raza desde el frontend:", error.message);
+    return `<p>Ocurrió un error al buscar: ${error.message}</p>`;
+  }
+
 }

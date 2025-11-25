@@ -1,56 +1,68 @@
-import { supabase } from '../../supabaseClient.js';
+import { pool } from '../../dbClient.js';
 
 export class MascotasRepository {
     
     async obtenerMascotas() {
-        const { data: mascotas, error } = await supabase
-            .from('mascotas')
-            .select('*');
-    
-        if (error) {
-            throw error;
+        try {
+            const result = await pool.query('SELECT * FROM mascotas ORDER BY id DESC');
+            return result.rows;
+        } catch (error) {
+            console.error("Error en obtenerMascotas:", error);
+            throw new Error("Fallo al listar mascotas desde la base de datos.");
         }
-        
-        return mascotas;
     }
     
     async obtenerMascotaPorId(id) {
-        const { data: mascota, error } = await supabase
-            .from("mascotas")
-            .select("*")
-            .eq("id", id)
-            .single();
-
-        if (error) {
-            throw error;
+        try {
+            const result = await pool.query('SELECT * FROM mascotas WHERE id = $1', [id]);
+            
+            if (result.rows.length === 0) {
+                return null; 
+            }
+            return result.rows[0];
+        } catch (error) {
+            console.error(`Error en obtenerMascotaPorId (ID: ${id}):`, error);
+            throw new Error("Fallo al obtener detalle de la mascota.");
         }
-
-        return mascota;
     }
 
     async insertarMascota(nombre, raza, edad, especie, foto) {
-        const {data, error} = await supabase
-            .from('mascotas')
-            .insert([
-                { nombre: nombre, raza: raza, edad: edad, especie: especie, foto: foto }
-            ]);
-        if (error) {
-            throw error;
+        try {
+            const sql = `
+                INSERT INTO mascotas (nombre, raza, edad, especie, foto)
+                VALUES ($1, $2, $3, $4, $5)
+                RETURNING *`;              
+            const values = [nombre, raza, edad, especie, foto];
+            const result = await pool.query(sql, values);
+            return result.rows[0];
+        } catch (error) {
+            console.error("Error en insertarMascota:", error);
+            throw new Error("Fallo al publicar la nueva mascota.");
         }
     }
     
-    async filtrarMascotasPorEdadBd(desde, hasta) {
-        const { data: mascotas, error } = await supabase
-            .from('mascotas')
-            .select('*')
-            .gte('edad', desde)
-            .lte('edad', hasta);
-    
-        if (error) {
-            throw error;
+    async filtrarMascotasPorEdad(desde, hasta) {
+        try {
+            const sql = 'SELECT * FROM mascotas WHERE edad >= $1 AND edad <= $2';
+            const values = [desde, hasta];
+            const result = await pool.query(sql, values);
+            return result.rows;
+        } catch (error) {
+            console.error("Error en filtrarMascotasPorEdadBd:", error);
+            throw new Error("Fallo al filtrar mascotas por edad.");
         }
+    }
 
-        return mascotas;
+    async filtrarMascotasPorRaza(raza) {
+        try {
+            const sql = 'SELECT * FROM mascotas WHERE raza ILIKE $1';
+            const values = [`%${raza}%`]; 
+            const result = await pool.query(sql, values);
+            return result.rows;
+        } catch (error) {
+            console.error("Error en filtrarMascotasPorRazaBd:", error);
+            throw new Error("Fallo al filtrar mascotas por raza.");
+        }
     }
 
     async filtrarMascotasPorRazaBd(razaBuscada){

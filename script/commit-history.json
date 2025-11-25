@@ -1,5 +1,752 @@
 [
   {
+    "sha": "bba69f1a7c56f2970383f7bce79963f7ca0d9845",
+    "author": "Juan Pablo",
+    "commit": {
+      "date": "2025-10-21T13:42:49.000Z",
+      "message": "feat: Se agrego el formulario de publicacion de mascota",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/bba69f1a7c56f2970383f7bce79963f7ca0d9845"
+    },
+    "stats": {
+      "total": 90,
+      "additions": 73,
+      "deletions": 17,
+      "date": "2025-10-21"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "3386694e52ecc399dbaf0a15325884331db4507e",
+    "author": "Ostin",
+    "commit": {
+      "date": "2025-10-21T14:05:46.000Z",
+      "message": "fetch: implementar funcion de agregar mascota",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/3386694e52ecc399dbaf0a15325884331db4507e"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 18,
+      "deletions": 20,
+      "date": "2025-10-21"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "a944f41852632994d7f6fc0c7314b5afd3279da5",
+    "author": "Ostin",
+    "commit": {
+      "date": "2025-10-21T14:35:18.000Z",
+      "message": "fetch: se integro la funcion de publicar mascota al presenter",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/a944f41852632994d7f6fc0c7314b5afd3279da5"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 9,
+      "deletions": 7,
+      "date": "2025-10-21"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "952cb5607e4a06dd43067ecb62441686d63e5de0",
+    "author": "Ostin",
+    "commit": {
+      "date": "2025-10-22T05:32:58.000Z",
+      "message": "fix: Solucione el test de publicar-mascota",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/952cb5607e4a06dd43067ecb62441686d63e5de0"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 2,
+      "deletions": 7,
+      "date": "2025-10-22"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "a41b7aee35e8ef1c9038fa2891a4bea224dc4cbc",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-10-22T19:11:24.000Z",
+      "message": "feat:se añadio mascotas.json",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/a41b7aee35e8ef1c9038fa2891a4bea224dc4cbc"
+    },
+    "stats": {
+      "total": 44,
+      "additions": 44,
+      "deletions": 0,
+      "date": "2025-10-22"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "9ff33781460de2a55155361cc9d944d28f81b045",
+    "author": "Juan Pablo",
+    "commit": {
+      "date": "2025-10-22T20:52:58.000Z",
+      "message": "feat: Ahora se puede visualizar la lista de mascotas que tenemos en el json",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/9ff33781460de2a55155361cc9d944d28f81b045"
+    },
+    "stats": {
+      "total": 62,
+      "additions": 61,
+      "deletions": 1,
+      "date": "2025-10-22"
+    },
+    "coverage": 100,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e6e9ff0524c59c70c95075f0ca1ce1367c8767fe",
+    "author": "Juan Pablo",
+    "commit": {
+      "date": "2025-10-22T20:58:44.000Z",
+      "message": "feat: Se agregaron estilos a la pagina para que se vea mas organizada",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/e6e9ff0524c59c70c95075f0ca1ce1367c8767fe"
+    },
+    "stats": {
+      "total": 111,
+      "additions": 111,
+      "deletions": 0,
+      "date": "2025-10-22"
+    },
+    "coverage": 100,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "7f8ca05fe2e2e49f939a259f466be2c16475d8ab",
+    "author": "Juan Pablo Rivera Mercado",
+    "commit": {
+      "date": "2025-10-23T02:51:41.000Z",
+      "message": "fix: se arreglo un error por el cual la lsita de masctoas no se mostraba en netlify",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/7f8ca05fe2e2e49f939a259f466be2c16475d8ab"
+    },
+    "stats": {
+      "total": 23,
+      "additions": 12,
+      "deletions": 11,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "9cf7e088ec35ccae2056b179075e999f286676a5",
+    "author": "Juan Pablo Rivera Mercado",
+    "commit": {
+      "date": "2025-10-23T03:18:42.000Z",
+      "message": "fix: se volvio a arreglar el presenter para poder visualizar la pagina correctamente en netlify",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/9cf7e088ec35ccae2056b179075e999f286676a5"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 13,
+      "deletions": 9,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "99e08e1a138d7e7c67163d774ae3346feaa8a64f",
+    "author": "Juan Pablo Rivera Mercado",
+    "commit": {
+      "date": "2025-10-23T03:27:29.000Z",
+      "message": "fix: Otro fix para el netlify",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/99e08e1a138d7e7c67163d774ae3346feaa8a64f"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "7e3fbb19916d746e3aec34b0924ed8036126b6dc",
+    "author": "oscar-perezRevons",
+    "commit": {
+      "date": "2025-10-23T04:54:12.000Z",
+      "message": "fix: Se agrego los archivos al .gitignore",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/7e3fbb19916d746e3aec34b0924ed8036126b6dc"
+    },
+    "stats": {
+      "total": 65,
+      "additions": 65,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c6f209c643e65bb22850519d7f00e1d648dfcd49",
+    "author": "oscar-perezRevons",
+    "commit": {
+      "date": "2025-10-23T05:26:41.000Z",
+      "message": "fix: Se resolvio los problemas de integracion con el Cypress",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/c6f209c643e65bb22850519d7f00e1d648dfcd49"
+    },
+    "stats": {
+      "total": 13682,
+      "additions": 4129,
+      "deletions": 9553,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 5,
+    "failed_tests": 2,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "753fc4516e3b73709ea7bb3556e622546395881f",
+    "author": "oscar-perezRevons",
+    "commit": {
+      "date": "2025-10-23T05:31:23.000Z",
+      "message": "fix: Se corrigio el archivo de jest",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/753fc4516e3b73709ea7bb3556e622546395881f"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 4,
+      "deletions": 4,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "a9b50c815d6e2b24d4a1ee0e35f95dd27697475c",
+    "author": "oscar-perezRevons",
+    "commit": {
+      "date": "2025-10-23T07:00:47.000Z",
+      "message": "feat: Se implemento la base de datos en Supabase",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/a9b50c815d6e2b24d4a1ee0e35f95dd27697475c"
+    },
+    "stats": {
+      "total": 600,
+      "additions": 492,
+      "deletions": 108,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "2abedee2985fc8eb15cc60584cd72fa860ad0564",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-10-24T08:49:09.000Z",
+      "message": "feat(filter-breed): implementar filtrado de mascotas por raza (Jest + Cypress + UI)",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/2abedee2985fc8eb15cc60584cd72fa860ad0564"
+    },
+    "stats": {
+      "total": 582,
+      "additions": 383,
+      "deletions": 199,
+      "date": "2025-10-24"
+    },
+    "coverage": 100,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "cbe42fc9408a460e5c065631e8bcf9dab8ea8f9f",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-11-06T01:40:53.000Z",
+      "message": "refactoring: mejoro nombres de variables en metodo filtrarMascotasPorEdad y en prueba jest del mismo",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/cbe42fc9408a460e5c065631e8bcf9dab8ea8f9f"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 2,
+      "deletions": 2,
+      "date": "2025-11-06"
+    },
+    "coverage": 100,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "bfd1e9c0578baee892aa0eba3c4ed664ec3cb04e",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-11-06T03:31:36.000Z",
+      "message": "refactoring: mejoro nombres de variables en metodo filtrarMascotasPorRaza y en prueba jest del mismo",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/bfd1e9c0578baee892aa0eba3c4ed664ec3cb04e"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 10,
+      "deletions": 10,
+      "date": "2025-11-06"
+    },
+    "coverage": 100,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "83d5709894fbb6442c53dad84bf71ca7d406d8a1",
+    "author": "oscarperez-Revons",
+    "commit": {
+      "date": "2025-11-06T13:14:04.000Z",
+      "message": "refactor: Mejora de nombres",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/83d5709894fbb6442c53dad84bf71ca7d406d8a1"
+    },
+    "stats": {
+      "total": 47540,
+      "additions": 32257,
+      "deletions": 15283,
+      "date": "2025-11-06"
+    },
+    "coverage": 100,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "5afd7cfe057988c36ba739c03b6789b1cead4ff9",
+    "author": "pololi15",
+    "commit": {
+      "date": "2025-11-11T17:22:41.000Z",
+      "message": "fix: se corrigio la version de parcel",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/5afd7cfe057988c36ba739c03b6789b1cead4ff9"
+    },
+    "stats": {
+      "total": 46386,
+      "additions": 14716,
+      "deletions": 31670,
+      "date": "2025-11-11"
+    },
+    "coverage": 100,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c5ae6b7473776c040420c54321080764098095fe",
+    "author": "pololi15",
+    "commit": {
+      "date": "2025-11-11T21:43:26.000Z",
+      "message": "refactor: ajuste de test para que funcionen con las nuevas modificaciones",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/c5ae6b7473776c040420c54321080764098095fe"
+    },
+    "stats": {
+      "total": 204,
+      "additions": 155,
+      "deletions": 49,
+      "date": "2025-11-11"
+    },
+    "coverage": 46.67,
+    "test_count": 10,
+    "failed_tests": 2,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "9789d7882d46bcc53075cba98c57bdb0c5576ee8",
+    "author": "pololi15",
+    "commit": {
+      "date": "2025-11-12T04:58:20.000Z",
+      "message": "feat: ver-detalle-mascota",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/9789d7882d46bcc53075cba98c57bdb0c5576ee8"
+    },
+    "stats": {
+      "total": 2338,
+      "additions": 2318,
+      "deletions": 20,
+      "date": "2025-11-12"
+    },
+    "coverage": 61.9,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "5c74e797aa7fee9396754083650a0c8115224554",
+    "author": "Juan Pablo",
+    "commit": {
+      "date": "2025-11-18T14:13:10.000Z",
+      "message": "refac: Extract method obtenerMascotas",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/5c74e797aa7fee9396754083650a0c8115224554"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 12,
+      "deletions": 4,
+      "date": "2025-11-18"
+    },
+    "coverage": 61.9,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "ed38a95d807f4d92236c7e4f51778a31732344e3",
+    "author": "Juan Pablo",
+    "commit": {
+      "date": "2025-11-18T14:22:41.000Z",
+      "message": "refac: Extraer a repositorio",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/ed38a95d807f4d92236c7e4f51778a31732344e3"
+    },
+    "stats": {
+      "total": 31,
+      "additions": 20,
+      "deletions": 11,
+      "date": "2025-11-18"
+    },
+    "coverage": 61.9,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "7223fb23b6d7e056f47fdd5374047af4b9284abd",
+    "author": "Juan Pablo",
+    "commit": {
+      "date": "2025-11-18T17:43:27.000Z",
+      "message": "fix:solucion de conflictos",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/7223fb23b6d7e056f47fdd5374047af4b9284abd"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
+      "date": "2025-11-18"
+    },
+    "coverage": 40.74,
+    "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "92a178dea024f33bb355cd706c56a258916b5fe3",
+    "author": "Juan Pablo Rivera Mercado",
+    "commit": {
+      "date": "2025-11-19T18:29:53.000Z",
+      "message": "refac: Inyeccion del MascotasService al presenter",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/92a178dea024f33bb355cd706c56a258916b5fe3"
+    },
+    "stats": {
+      "total": 59,
+      "additions": 23,
+      "deletions": 36,
+      "date": "2025-11-19"
+    },
+    "coverage": 61.9,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "82b5ed96388e9d60a6b2446e51f522e61efb5890",
+    "author": "Juan Pablo Rivera Mercado",
+    "commit": {
+      "date": "2025-11-19T19:20:42.000Z",
+      "message": "Se cambiaron los estilos y estructura de la pagina",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/82b5ed96388e9d60a6b2446e51f522e61efb5890"
+    },
+    "stats": {
+      "total": 391,
+      "additions": 187,
+      "deletions": 204,
+      "date": "2025-11-19"
+    },
+    "coverage": 61.9,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "1b4542e0be659491df9e90c8239ad1abe0a12bdb",
+    "author": "pololi15",
+    "commit": {
+      "date": "2025-11-20T04:06:24.000Z",
+      "message": "refactor: abstracción en la inserción de publicar-mascota",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/1b4542e0be659491df9e90c8239ad1abe0a12bdb"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 14,
+      "deletions": 10,
+      "date": "2025-11-20"
+    },
+    "coverage": 61.9,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e9bdb8c6527beb2263a2b4dd0bd472a80e3b5b92",
+    "author": "pololi15",
+    "commit": {
+      "date": "2025-11-20T04:14:18.000Z",
+      "message": "refactor: segundo refactor para inserta en supabase de publicar-mascota",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/e9bdb8c6527beb2263a2b4dd0bd472a80e3b5b92"
+    },
+    "stats": {
+      "total": 29,
+      "additions": 15,
+      "deletions": 14,
+      "date": "2025-11-20"
+    },
+    "coverage": 56.52,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "6660bc1d676a244a0bea5f070f468bf22013981a",
+    "author": "pololi15",
+    "commit": {
+      "date": "2025-11-20T04:28:58.000Z",
+      "message": "Refactor: publicar-mascota refactorizado",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/6660bc1d676a244a0bea5f070f468bf22013981a"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 13,
+      "deletions": 12,
+      "date": "2025-11-20"
+    },
+    "coverage": 57.45,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "a8e43da223fd8fffadb74bcd5c34e1c1cfe44e40",
+    "author": "pololi15",
+    "commit": {
+      "date": "2025-11-20T04:39:07.000Z",
+      "message": "fix: arreglo simple para cypress",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/a8e43da223fd8fffadb74bcd5c34e1c1cfe44e40"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 2,
+      "deletions": 0,
+      "date": "2025-11-20"
+    },
+    "coverage": 60,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "6495161a43b84383e45f52ee111413f58f885096",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-11-20T12:08:03.000Z",
+      "message": "feat: agregar obtenerMascotaPorId en repositorio y service",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/6495161a43b84383e45f52ee111413f58f885096"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 18,
+      "deletions": 0,
+      "date": "2025-11-20"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
+  },
+  {
+    "sha": "190560a51286826281220e191b6acaf900d58e25",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-11-20T12:55:40.000Z",
+      "message": "refactor: adaptar verDetalleMascota a arquitectura hexagonal, test: actualizar tests de verDetalleMascota para usar service mock",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/190560a51286826281220e191b6acaf900d58e25"
+    },
+    "stats": {
+      "total": 171,
+      "additions": 80,
+      "deletions": 91,
+      "date": "2025-11-20"
+    },
+    "coverage": 60,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "513619950251362acd308c4d689fce785df850a9",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-11-24T00:49:01.000Z",
+      "message": "feat: Ahora las mascotas filtradas por raza se obtienen desde la bd",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/513619950251362acd308c4d689fce785df850a9"
+    },
+    "stats": {
+      "total": 123,
+      "additions": 81,
+      "deletions": 42,
+      "date": "2025-11-24"
+    },
+    "coverage": 56.86,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "dfa19a3c97b6497f0af3d8f222b4043ebfb74fb6",
+    "author": "pololi15",
+    "commit": {
+      "date": "2025-11-24T03:27:59.000Z",
+      "message": "Refactor: Del refactor publicar-mascota",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/dfa19a3c97b6497f0af3d8f222b4043ebfb74fb6"
+    },
+    "stats": {
+      "total": 34,
+      "additions": 19,
+      "deletions": 15,
+      "date": "2025-11-24"
+    },
+    "coverage": 61.7,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "8c27edf48972ac8e5ac8553129bfe50da0b73f2f",
+    "author": "pololi15",
+    "commit": {
+      "date": "2025-11-24T03:34:07.000Z",
+      "message": "Refactor",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/8c27edf48972ac8e5ac8553129bfe50da0b73f2f"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 0,
+      "deletions": 4,
+      "date": "2025-11-24"
+    },
+    "coverage": 61.7,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "260d68e97efce9d756af5c30113a4c1ba7a588c9",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-11-24T03:35:30.000Z",
+      "message": "refactor: Se extrajo el metodo filtrarMascotasPorEdadBd",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/260d68e97efce9d756af5c30113a4c1ba7a588c9"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 15,
+      "deletions": 7,
+      "date": "2025-11-24"
+    },
+    "coverage": 56.86,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "73c85760c2de92b35e376bfb1fc4298e312e2638",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-11-24T03:58:22.000Z",
+      "message": "refactor: se movio el metodo a donde corresponde MascotasRepository",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/73c85760c2de92b35e376bfb1fc4298e312e2638"
+    },
+    "stats": {
+      "total": 33,
+      "additions": 17,
+      "deletions": 16,
+      "date": "2025-11-24"
+    },
+    "coverage": 56.86,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c4e099f8ebf55592f55156c7229bbc356fbad358",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-11-24T04:15:44.000Z",
+      "message": "refactor: se inyecta la dependencia del repositorio  al MascotasService",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/c4e099f8ebf55592f55156c7229bbc356fbad358"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 7,
+      "deletions": 2,
+      "date": "2025-11-24"
+    },
+    "coverage": 56.86,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "b2c834daaf752791eff8950b13e9b7019ebf181d",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-11-24T05:42:06.000Z",
+      "message": "refactor: se inyecta la dependencia del repositorio  al MascotasService",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/b2c834daaf752791eff8950b13e9b7019ebf181d"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 7,
+      "deletions": 2,
+      "date": "2025-11-24"
+    },
+    "coverage": 61.7,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "6b00bf9dbfd200b20b69cf8d2fda2ef956ea27fc",
+    "author": "oscarperez-Revons",
+    "commit": {
+      "date": "2025-11-24T14:49:14.000Z",
+      "message": "Feat: Se organiza el proyecto en carpetas frontend/backend siguiendo la arquitectura hexagonal",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/6b00bf9dbfd200b20b69cf8d2fda2ef956ea27fc"
     "sha": "HEAD",
     "author": "Leonardo Koller",
     "commit": {
@@ -15,6 +762,25 @@
     },
     "coverage": 62.5,
     "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "oscarperez-Revons",
+    "commit": {
+      "date": "2025-11-25T09:22:11.000Z",
+      "message": "Refactorizacion, conexion a Neon, implementacion REST",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 1681,
+      "additions": 985,
+      "deletions": 696,
+      "date": "2025-11-25"
+    },
+    "coverage": 81.82,
+    "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"
   }
