@@ -722,17 +722,36 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "a984f5dddff5d37e1060dea5469961a0ec01bed6",
     "author": "Leonardo Koller",
     "commit": {
       "date": "2025-11-25T06:22:51.000Z",
       "message": "test: Correccion de  pruebas  para inicio y cierre de sesión",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/a984f5dddff5d37e1060dea5469961a0ec01bed6"
     },
     "stats": {
       "total": 4,
       "additions": 2,
       "deletions": 2,
+      "date": "2025-11-25"
+    },
+    "coverage": 62.07,
+    "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-11-25T06:24:46.000Z",
+      "message": "test: Agregar pruebas de Cypress para inicio y cierre de sesión",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 30,
+      "additions": 30,
+      "deletions": 0,
       "date": "2025-11-25"
     },
     "coverage": 62.07,
