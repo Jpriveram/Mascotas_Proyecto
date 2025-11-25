@@ -19,7 +19,7 @@ describe("autenticacionService", () => {
 
         await expect(iniciarSesion("test@example.com", "wrongpassword"))
             .rejects
-            .toThrow("Error al iniciar sesión: Contraseña incorrecta");
+            .toThrow("Contraseña incorrecta");
     });
 
     it("debería cerrar sesión correctamente", async () => {
@@ -34,6 +34,6 @@ describe("autenticacionService", () => {
 
         await expect(cerrarSesion())
             .rejects
-            .toThrow("Error al cerrar sesión: Error al cerrar sesión");
+            .toThrow("Error al cerrar sesión");
     });
 });

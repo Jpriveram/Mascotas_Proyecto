@@ -703,12 +703,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b0d3f761b85de482f7119449482bf711b79ebe76",
     "author": "Leonardo Koller",
     "commit": {
       "date": "2025-11-25T06:16:55.000Z",
       "message": "test: Agregar pruebas  para inicio y cierre de sesión",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/b0d3f761b85de482f7119449482bf711b79ebe76"
     },
     "stats": {
       "total": 39,
@@ -720,5 +720,24 @@
     "test_count": 14,
     "failed_tests": 2,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-11-25T06:22:51.000Z",
+      "message": "test: Correccion de  pruebas  para inicio y cierre de sesión",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 2,
+      "deletions": 2,
+      "date": "2025-11-25"
+    },
+    "coverage": 62.07,
+    "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
