@@ -665,16 +665,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "303c63a1a6cde8b64e530669bcabd556d71b1a6f",
     "author": "Leonardo Koller",
     "commit": {
       "date": "2025-11-25T06:06:50.000Z",
       "message": "feat: Agregar controladores para cierre de sesión",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/303c63a1a6cde8b64e530669bcabd556d71b1a6f"
     },
     "stats": {
       "total": 16,
       "additions": 16,
+      "deletions": 0,
+      "date": "2025-11-25"
+    },
+    "coverage": 60,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-11-25T06:13:26.000Z",
+      "message": "feat: Agregar inicio y boton de cierre de sesion en el index.html",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 19,
       "deletions": 0,
       "date": "2025-11-25"
     },
