@@ -646,16 +646,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "05d67b29db34ffa605eae4ed61648a0f28fe540b",
     "author": "Leonardo Koller",
     "commit": {
       "date": "2025-11-25T06:05:05.000Z",
       "message": "Agregar controladores para inicio de sesion",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/05d67b29db34ffa605eae4ed61648a0f28fe540b"
     },
     "stats": {
       "total": 24,
       "additions": 24,
+      "deletions": 0,
+      "date": "2025-11-25"
+    },
+    "coverage": 60,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-11-25T06:06:50.000Z",
+      "message": "feat: Agregar controladores para cierre de sesión",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
       "deletions": 0,
       "date": "2025-11-25"
     },

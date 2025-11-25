@@ -22,3 +22,19 @@ export function agregarFormularioInicioSesion() {
         }
     });
 }
+
+// Función para manejar el botón de cierre de sesión
+export function agregarFormularioCerrarSesion() {
+    const botonCerrarSesion = document.querySelector("#cerrar-sesion");
+
+    botonCerrarSesion.addEventListener("click", async () => {
+        try {
+            await cerrarSesion();
+            document.querySelector("#mensaje-exito").textContent = "Sesión cerrada correctamente.";
+            // Redirigir a la página de inicio
+            window.location.href = "/login";
+        } catch (error) {
+            document.querySelector("#mensaje-error").textContent = error.message;
+        }
+    });
+}
