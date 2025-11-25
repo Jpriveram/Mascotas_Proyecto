@@ -10,3 +10,13 @@ export async function iniciarSesion(email, contrasena) {
 
     return data;
 }
+// Función para cerrar sesión
+export async function cerrarSesion() {
+    const { error } = await supabase.auth.signOut();
+    
+    if (error) {
+        throw new Error('Error al cerrar sesión: ' + error.message);
+    }
+    
+    return true;
+}

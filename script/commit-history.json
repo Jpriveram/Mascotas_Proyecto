@@ -608,16 +608,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e408c7d577e55a70b539ca6eb80150648547e525",
     "author": "Leonardo Koller",
     "commit": {
       "date": "2025-11-25T05:58:47.000Z",
       "message": "feat: Agregar lógica para inicio de sesion",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/e408c7d577e55a70b539ca6eb80150648547e525"
     },
     "stats": {
       "total": 12,
       "additions": 12,
+      "deletions": 0,
+      "date": "2025-11-25"
+    },
+    "coverage": 60,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-11-25T06:02:59.000Z",
+      "message": "feat: Agregar lógica para cierre de sesion",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
       "deletions": 0,
       "date": "2025-11-25"
     },
