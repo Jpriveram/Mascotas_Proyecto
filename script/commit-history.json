@@ -684,12 +684,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "72662f0b147fc875413a0e6db458fe61d7413401",
     "author": "Leonardo Koller",
     "commit": {
       "date": "2025-11-25T06:13:26.000Z",
       "message": "feat: Agregar inicio y boton de cierre de sesion en el index.html",
-      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/72662f0b147fc875413a0e6db458fe61d7413401"
     },
     "stats": {
       "total": 19,
@@ -701,5 +701,24 @@
     "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-11-25T06:16:55.000Z",
+      "message": "test: Agregar pruebas  para inicio y cierre de sesión",
+      "url": "https://github.com/Jpriveram/Mascotas_Proyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 39,
+      "additions": 39,
+      "deletions": 0,
+      "date": "2025-11-25"
+    },
+    "coverage": 62.07,
+    "test_count": 14,
+    "failed_tests": 2,
+    "conclusion": "failure"
   }
 ]
