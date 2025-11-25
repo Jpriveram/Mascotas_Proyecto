@@ -1,5 +1,6 @@
-import mostrarMascota from "./mostrar-mascota.js";
+import mostrarMascota from "../mostrar-mascota.js";
 //import publicarMascota from "./publicar-mascota.js";
+<<<<<<< HEAD:src/presenter.js
 import { insertarSupabase } from "./publicar-mascota.js";
 import filtrarMascotasPorEdad from "./filtrar-mascota-edad.js";
 import filtrarMascotasPorRaza from "./filtrar-mascota-raza.js";
@@ -9,6 +10,17 @@ import MascotasService from "./MascotasService.js";
 import mostrarPublicarMascota from "./publicar-mascota.js";
 import { crearVerDetalleMascota } from "./ver-detalle-mascota.js";
 import { agregarFormularioInicioSesion, agregarFormularioCerrarSesion } from './autenticacionController.js';
+=======
+import { insertarSupabase } from "../publicar-mascota.js";
+import filtrarMascotasPorEdad from "../filtrar-mascota-edad.js";
+import filtrarMascotasPorRaza from "../filtrar-mascota-raza.js";
+import { supabase } from "../supabaseClient.js";
+import { MascotasRepository } from "../backend/infrastructure/MascotasRepository.js";
+import { MascotasService } from "../backend/services/MascotasService.js";
+import mostrarPublicarMascota from "../publicar-mascota.js";
+import { crearVerDetalleMascota } from "../ver-detalle-mascota.js";
+
+>>>>>>> 3cde65c6a6f0c1a1026dcb72b9dc304e4fae5568:src/frontend/presenter.js
 
 const mascotasRepository = new MascotasRepository();
 const mascotasService = new MascotasService(mascotasRepository);
@@ -78,10 +90,9 @@ form.addEventListener("submit", async (event) => {
     const species = especie.value;
     const photo = foto.value;
 
-    insertarSupabase(div, name, breed, age, species, photo);
+    mascotasService.publicarMascota(name, breed, age, species, photo);
     mostrarPublicarMascota(div, name, breed, age, species, photo);
     
-    // Recargar la lista de mascotas
     await cargarMascotas();
 });
 
@@ -98,13 +109,7 @@ buscarBtn.addEventListener("click", async () => {
 
     try {
         // Traer todas las mascotas del rango desde Supabase
-        const { data: mascotas, error } = await supabase
-            .from('mascotas')
-            .select('*')
-            .gte('edad', desde)
-            .lte('edad', hasta);
-
-        if (error) throw error;
+        const mascotas = await mascotasService.filtrarMascotasPorEdadBd(desde,hasta);
 
         // Usar la función filtradora para mantener estructura y testabilidad
         const filtradas = filtrarMascotasPorEdad(desde, hasta, mascotas);
@@ -126,8 +131,33 @@ buscarBtn.addEventListener("click", async () => {
     }
 });
 
-buscarRazaBtn.addEventListener("click", () => {
-  const razaBuscada = CampoRaza.value;
-  const html = filtrarMascotasPorRaza(razaBuscada);
-  divFiltrarRaza.innerHTML = html;
+buscarRazaBtn.addEventListener("click", async () => {
+  const razaBuscada = CampoRaza.value.trim();
+
+  if (!razaBuscada) {
+    divFiltrarRaza.innerHTML = "<p>Por favor, ingrese una raza para buscar.</p>";
+    return;
+  }     
+
+  try{
+
+    const mascotas = await mascotasService.filtrarMascotasPorRazaBd(razaBuscada);
+    const filtradas = filtrarMascotasPorRaza(razaBuscada,mascotas );
+   
+    if (!filtradas || filtradas.length === 0) {
+      divFiltrarRaza.innerHTML = "<p>No existen mascotas con esa raza.</p>";
+      return;
+    }
+    
+    let html = "";
+    filtradas.forEach((mascota) => {
+      html += mostrarMascota(mascota);
+    });
+
+    divFiltrarRaza.innerHTML = html;
+    
+    } catch(error){
+      divFiltrarRaza.innerHTML = `<p>Error filtrando mascotas: ${error.message}</p>`;
+      console.error("Error filtrando mascotas:", error);
+    }
 });

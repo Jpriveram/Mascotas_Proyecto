@@ -18,17 +18,17 @@ describe("Mascotas", () => {
     cy.visit("/");
   });
 
-  it("Filtrar mascota por raza con resultados (Angora → Nube)", () => {
-    cy.get("#raza-filtro").clear().type("Angora");
-    cy.get("#buscar-raza-button").click();
+it("Filtrar mascota por raza con resultados (Pitbull → Togo)", () => {
+  cy.get("#raza-filtro").clear().type("Pitbull");
+  cy.get("#buscar-raza-button").click();
 
-    cy.get("#resultado-buscar-raza-div .mascota-item")
-      .should("have.length.at.least", 1);
+  cy.get("#resultado-buscar-raza-div .mascota-item")
+    .should("have.length.at.least", 1);
 
-    cy.get("#resultado-buscar-raza-div")
-      .should("contain", "Nube")
-      .and("contain", "Angora");
-  });
+  cy.get("#resultado-buscar-raza-div")
+    .should("contain", "Togo")
+    .and("contain", "Pitbull");
+});
 
   it("Filtrar mascota por raza sin resultados (Mestizo)", () => {
     cy.get("#raza-filtro").clear().type("Mestizo");
